@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Ocultar la extensión .html para los archivos existentes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirigir las solicitudes de /index.html a /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://fiberquil.com.ar/ [R=301,L]
