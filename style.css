@@ -1,5 +1,4 @@
 /*Codigo nuevo*/
-/*NAV*/
 /* Icono */
 #logo a.standard-logo {
 	display: -ms-flexbox;
@@ -15,6 +14,13 @@
 .bodyLogo{
 	width: 100%;
 	height: 100%;
+}
+
+/*Container de información*/
+.conteinerInfoFinal{
+	height: auto;
+	margin: 5%;
+	
 }
 
 /* Codigo antiguo */
