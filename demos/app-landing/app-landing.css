@@ -232,31 +232,6 @@
 	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 770px) {
-	.pricing-box{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 370px;
-	}
-	.contenedorPrecioA{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: auto;
-	}
-	.preciosContenedor2{
-		display: flex;
-		justify-content: center;
-	}
-	.tituloPrecios{
-		display: flex;
-		font-size: 30px;
-		padding-top: 15%;
-	}
-}
-
 .pricing-title {
 	background-color: transparent;
 	border-bottom: 0;
