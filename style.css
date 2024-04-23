@@ -3,8 +3,9 @@
 #logo a.standard-logo {
 	display: -ms-flexbox;
 	display: flex;
-	height: 10vh;
-	width: 90%;
+	height: 8vh;
+	width: 80%;
+	align-items: center;
 }
 /*Imagen de fondo*/
 .containerTotal{
@@ -21,6 +22,29 @@
 	height: auto;
 	margin: 5%;
 	
+}
+
+/*Titulo zoom*/
+.animate__zoomIn {
+	display: inline-block;
+	margin: 0 0.5rem;
+  
+	animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 3s; /* don't forget to set a duration! */
+  }
+
+.buttonInicio{
+	width: 18vh;
+	height: 3.80vh;
+	background-color: #FE5F00;
+	color: white;
+	border: none;
+	font-weight: bold;
+	box-shadow: none;
+}
+
+.buttonInicio:hover{
+	background-color: #0e64bf;
 }
 
 /* Codigo antiguo */
