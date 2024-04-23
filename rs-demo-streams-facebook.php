@@ -71,7 +71,7 @@
 		}
 
 		.demos-filter li a:hover,
-		.demos-filter li.activeFilter a { color: #1ABC9C; }
+		.demos-filter li.activeFilter a { color: #FE5F00; }
 
 		@media (max-width: 991px) {
 			.demos-filter { text-align: center; }

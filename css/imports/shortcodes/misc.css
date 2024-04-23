@@ -359,7 +359,7 @@ body:not(.device-touch) #gotoTop {
   bottom: 30px;
 }
 #gotoTop:hover {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 @media (max-width: 767.98px) {
   #gotoTop {
@@ -571,7 +571,7 @@ body:not(.device-touch) #gotoTop {
   margin-left: 2px;
 }
 .nav-tree li:hover > a, .nav-tree li.current > a, .nav-tree li.active > a {
-  color: #1ABC9C !important;
+  color: #FE5F00 !important;
 }
 .nav-tree li.current > ul {
   display: block;
@@ -682,7 +682,7 @@ input.switch-toggle-round + label::after {
   transition: margin 0.4s;
 }
 input.switch-toggle-round:checked + label::before {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 input.switch-toggle-round:checked + label::after {
   margin-left: 30px;
@@ -811,11 +811,11 @@ input.switch-toggle-flat + label::after {
   transition: margin 0.4s, background 0.4s;
 }
 input.switch-toggle-flat:checked + label {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 input.switch-toggle-flat:checked + label::after {
   margin-left: 30px;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 
 /* -----------------------------------------------------------

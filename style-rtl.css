@@ -642,7 +642,7 @@ Header
 	.dots-menu .page-menu-item div::after {
 		right: auto;
 		left: -5px;
-		border-right: 6px solid #1abc9c;
+		border-right: 6px solid #FE5F00;
 		border-left: 0;
 	}
 	.dots-menu .page-menu-item > a:hover div {
@@ -2275,14 +2275,14 @@ blockquote.float-right {
 -----------------------------------------------------------------*/
 .title-block {
 	padding: 2px 20px 3px 0px;
-	border-right: 7px solid #1abc9c;
+	border-right: 7px solid #FE5F00;
 	border-left: 0;
 }
 
 .title-block-right {
 	padding: 2px 0px 3px 20px;
 	border-right: 0;
-	border-left: 7px solid #1abc9c;
+	border-left: 7px solid #FE5F00;
 	text-align: left;
 }
 

@@ -744,7 +744,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 .control-solid .flex-control-nav li:hover a,
 .control-solid .flex-control-nav li a.flex-active {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 
 .control-square .flex-control-nav li a {

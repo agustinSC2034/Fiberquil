@@ -276,7 +276,7 @@
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
-  background-color: #1ABC9C !important;
+  background-color: #FE5F00 !important;
   color: #FFF !important;
   text-decoration: none;
 }
@@ -295,7 +295,7 @@
   height: 8px;
   margin: 30px 4px 0 4px;
   border-radius: 50%;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;

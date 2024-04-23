@@ -76,7 +76,7 @@ body:not(.device-touch) .clients-grids-grid li a {
   width: 6px !important;
   height: 6px !important;
   border: none;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
   opacity: 0.5;
 }
 .testimonial .flex-control-nav li:hover a {

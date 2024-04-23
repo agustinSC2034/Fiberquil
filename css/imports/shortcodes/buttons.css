@@ -16,7 +16,7 @@
   padding: 8px 22px;
   font-size: 0.875rem;
   line-height: 24px;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -48,7 +48,7 @@ body:not(.device-touch) .button {
   background-color: #333333;
 }
 .button.button-dark:hover {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 .button.button-light {
   background-color: #eeeeee;
@@ -168,7 +168,7 @@ body:not(.device-touch) .button {
   transition: none;
 }
 .button.button-3d:hover {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
   opacity: 0.9;
 }
 .button.button-3d.button-light:hover, .button.button-reveal.button-light:hover {

@@ -62,7 +62,7 @@
 .fbox-icon i,
 .fbox-icon img {
   border-radius: 50%;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 .fbox-icon i {
   font-style: normal;
@@ -149,7 +149,7 @@
   -----------------------------------------------------------------*/
 }
 .fbox-outline .fbox-icon a {
-  border: 1px solid #1ABC9C;
+  border: 1px solid #FE5F00;
   padding: 0.25rem;
   border-radius: 50%;
 }
@@ -213,14 +213,14 @@
   -----------------------------------------------------------------*/
 }
 .fbox-border .fbox-icon a {
-  border: 1px solid #1ABC9C;
+  border: 1px solid #FE5F00;
   border-radius: 50%;
 }
 .fbox-border .fbox-icon i,
 .fbox-border .fbox-icon img {
   border: none;
   background-color: transparent !important;
-  color: #1ABC9C;
+  color: #FE5F00;
 }
 .fbox-border.fbox-light .fbox-icon a {
   border-color: #e5e5e5;
@@ -248,7 +248,7 @@
 .fbox-plain .fbox-icon img {
   border: none;
   background-color: transparent;
-  color: #1ABC9C;
+  color: #FE5F00;
   border-radius: 0;
 }
 .fbox-plain .fbox-icon i {
@@ -391,10 +391,10 @@
   color: #FFF;
 }
 .fbox-effect.fbox-dark .fbox-icon i::after {
-  box-shadow: 0 0 0 2px #1ABC9C;
+  box-shadow: 0 0 0 2px #FE5F00;
 }
 .fbox-effect.fbox-dark .fbox-icon i:hover, .fbox-effect.fbox-dark:hover .fbox-icon i {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 .fbox-effect .fbox-icon i:hover::after, .fbox-effect:hover .fbox-icon i::after {
   -webkit-transform: scale(1);
@@ -440,10 +440,10 @@
   background-color: #3d3d3d;
 }
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover, .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i {
-  box-shadow: 0 0 0 1px #1ABC9C;
+  box-shadow: 0 0 0 1px #FE5F00;
 }
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i::after {
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
 }
 .fbox-border.fbox-effect .fbox-icon i:hover::after, .fbox-border.fbox-effect:hover .fbox-icon i::after {
   -webkit-transform: scale(1);

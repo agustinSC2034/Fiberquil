@@ -138,15 +138,15 @@ span.middot {
 
 .bg-color,
 .bg-color #header-wrap {
-  background-color: #1ABC9C !important;
+  background-color: #FE5F00 !important;
 }
 
 .color {
-  color: #1ABC9C !important;
+  color: #FE5F00 !important;
 }
 
 .border-color {
-  border-color: #1ABC9C !important;
+  border-color: #FE5F00 !important;
 }
 
 .nott {
@@ -424,7 +424,7 @@ span.middot {
 
 .h-text-color:hover,
 a.h-text-color:hover {
-  color: #1ABC9C !important;
+  color: #FE5F00 !important;
 }
 
 /* ----------------------------------------------------------------
@@ -436,7 +436,7 @@ a.h-text-color:hover {
 }
 
 .h-bg-color:hover {
-  background-color: #1ABC9C !important;
+  background-color: #FE5F00 !important;
 }
 
 .h-nobg:hover {

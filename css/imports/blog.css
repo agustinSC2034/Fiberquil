@@ -79,7 +79,7 @@
 .entry-title h2 a:hover,
 .entry-title h3 a:hover,
 .entry-title h4 a:hover {
-  color: #1ABC9C;
+  color: #FE5F00;
 }
 .entry-title.title-sm h2,
 .entry-title.title-sm h3 {
@@ -220,7 +220,7 @@ body:not(.device-touch) .entry-link {
 
 .entry-link:hover {
   color: #FFF;
-  background-color: #1ABC9C;
+  background-color: #FE5F00;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -357,8 +357,8 @@ body:not(.device-touch) .entry-link {
 
   .post-timeline .entry:hover .entry-timeline,
   .post-timeline .entry:hover .timeline-divider {
-    border-color: #1ABC9C;
-    color: #1ABC9C;
+    border-color: #FE5F00;
+    color: #FE5F00;
   }
 }
 .entry.entry-date-section {
@@ -425,7 +425,7 @@ body:not(.device-touch) .entry-link {
 }
 .more-link {
   display: inline-block;
-  border-bottom: 1px solid #1ABC9C;
+  border-bottom: 1px solid #FE5F00;
   padding: 0 2px;
   font-family: "PT Serif", serif;
   font-style: italic;
@@ -585,7 +585,7 @@ body:not(.device-touch) .entry-link {
 }
 
 .comment-content .comment-author a:hover {
-  color: #1ABC9C;
+  color: #FE5F00;
 }
 
 .comment-content .comment-author span {
