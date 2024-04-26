@@ -62,6 +62,21 @@
 	height: 100%;
 }
 
+/*Container servicios*/
+.containerServicios{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -5vh;
+	margin-bottom: 12vh;
+}
+
+.containerServiciosInside{
+	display: flex;
+	margin-bottom: -11.5vh;
+}
+
 /* Map */
 .gmapClass{
 	width: 100%;
