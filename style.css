@@ -68,19 +68,23 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: -5vh;
+	margin-top: -6.5vh;
 	margin-bottom: 12vh;
 }
 
 .containerServiciosInside{
 	display: flex;
-	margin-bottom: -11.5vh;
+	margin-bottom: -15vh;
 }
 
 /* Map */
 .gmapClass{
 	width: 100%;
 	height: 100%;
+}
+
+.a_hoverUBI:hover{
+	color: #050545;
 }
 
 /* Codigo antiguo */
@@ -6051,6 +6055,10 @@
  		opacity: 1;
  		right: 30px;
  	}
+
+	.linkMio:hoover {
+		color: orangered;
+	}
 
  }
 
