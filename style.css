@@ -68,13 +68,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: -6.5vh;
-	margin-bottom: 12vh;
+	margin-top: -7.5vh;
+	margin-bottom: 5vh;
 }
 
 .containerServiciosInside{
 	display: flex;
-	margin-bottom: -15vh;
+	margin-bottom: -17vh;
 }
 
 /* Map */
