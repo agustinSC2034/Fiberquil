@@ -358,6 +358,15 @@
  	justify-content: center;
  }
 
+ @media (max-width: 1200px) {
+	.tamañoPic{
+		display: none;
+	}
+	.retina-logo{
+		display: none;
+	}
+}
+
  /* Fin codigo nuevo */
 
  /* ----------------------------------------------------------------
