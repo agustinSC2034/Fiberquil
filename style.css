@@ -108,6 +108,9 @@
  	/* Ajusta el espaciado entre el texto y el ícono */
  }
 
+
+
+
  /* Estilos para el formato móvil */
  @media screen and (max-width: 600px) {
  	.dropdown:before {
