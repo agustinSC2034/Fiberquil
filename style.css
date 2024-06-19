@@ -365,6 +365,14 @@
  	justify-content: center;
  }
 
+ .clientesWeb{
+	display: flex; 
+	justify-content: center; 
+	height: 300px; 
+	align-items: center; 
+	margin-top: -7%;
+}
+
  @media (max-width: 1200px) {
 	.tamañoPic{
 		display: none;
@@ -378,6 +386,22 @@
 		display: none;
 	}
 }
+
+@media screen and (min-width: 800px) {
+	/* Desactivar clientes movil en tamaño normal*/
+.clientesMovil{
+	display: none;
+}
+}
+
+@media screen and (max-width: 800px) {
+	/* Desactivar clientes movil en tamaño normal*/
+.clientesWeb{
+	display: none;
+}
+}
+
+
 
 
 
