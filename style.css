@@ -406,11 +406,14 @@
 		display: none;
 	}
 	.carrouselImgTrabajos{
-		display: none;
+		background-color: red;
 	}
 }
-
-
+@media screen and (max-width: 1000px) {
+	.carrouselImgTrabajos{
+		width: 100vh;
+	}
+}
 
 
 
