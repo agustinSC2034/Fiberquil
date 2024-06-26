@@ -1,4 +1,10 @@
 /*Codigo nuevo*/
+
+.sectionMayor{
+	display: column;
+	width: auto;
+}
+
 /* Icono */
 #logo a.standard-logo {
 	display: -ms-flexbox;
@@ -404,9 +410,6 @@
 @media screen and (max-width: 1000px) {
 	.imgFTTH{
 		display: none;
-	}
-	.carrouselImgTrabajos{
-		background-color: red;
 	}
 }
 @media screen and (max-width: 1000px) {
