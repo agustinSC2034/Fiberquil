@@ -1,5 +1,25 @@
 /*Codigo nuevo*/
 
+.producto-hover img {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 8px;
+  }
+  
+  .producto-hover img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-hover {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+	transform: translateY(-5px) scale(1.02);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+
 .sectionMayor{
 	display: column;
 	width: auto;
@@ -29,6 +49,8 @@
 	margin: 5%;
 	
 }
+
+
 
 /*Titulo zoom*/
 .animate__zoomIn {
