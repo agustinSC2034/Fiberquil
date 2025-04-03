@@ -1,5 +1,24 @@
 /*Codigo nuevo*/
 
+/* Estilos generales del botón flotante */
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background-image: url('img/whatsapp.png');
+	/* Ruta de tu imagen de WhatsApp */
+	background-size: cover;
+	border-radius: 0%;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.floating-button:hover {
+	transform: scale(1.1);
+}
+
 .producto-hover img {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	border-radius: 8px;
