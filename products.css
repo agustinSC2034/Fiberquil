@@ -39,8 +39,8 @@
   font-weight: bold;
 }
 
-.btn-warning:hover {
-    background-color: #e05e00 !important;
+  .btn-warning:hover {
+    background-color: #b85306 !important;
     color: white;
   }
   

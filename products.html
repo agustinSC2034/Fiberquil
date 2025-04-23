@@ -70,15 +70,8 @@
               </a>
             </div>
     
-            <!-- Botón Home -->
-            <div class="d-none d-md-block">
-              <a href="index.html" class="btn btn-warning text-white fw-bold px-4 py-2" style="border-radius: 8px; transition: all 0.3s;">
-                Volver al Home
-              </a>
-            </div>
-    
-            <!-- Iconos sociales -->
-            <div class="d-flex gap-2">
+            <!-- Iconos sociales (solo desktop) -->
+            <div class="d-none d-md-flex gap-2 align-items-center">
               <a href="mailto:info@fiberquil.com.ar" target="_blank" class="btn btn-outline-light btn-sm" title="Mail" style="border-radius: 10px;">
                 <i class="fas fa-envelope"></i>
               </a>
@@ -96,11 +89,40 @@
               </a>
             </div>
     
+            <!-- Menú Hamburguesa (mobile) -->
+            <div id="primary-menu-trigger">
+              <svg class="svg-trigger" viewBox="0 0 100 100">
+                <path d="m 30,33 h 40 c 3.72,0 7.5,3.13 7.5,8.57 0,5.45 -2.73,8.42 -7.5,8.42 h -20"></path>
+                <path d="m 30,50 h 40"></path>
+                <path d="m 70,67 h -40 c 0,0 -7.5,-0.8 -7.5,-8.36 0,-7.56 7.5,-8.63 7.5,-8.63 h 20"></path>
+              </svg>
+            </div>
+    
+            <!-- Primary Navigation -->
+            <nav class="primary-menu not-dark with-arrows">
+              <ul class="menu-container not-dark">
+                <li class="menu-item">
+                  <a class="menu-link" href="index.html">
+                    <div style="font-size: 14px;">Volver al INICIO</div>
+                  </a>
+                </li>
+                <!-- Social Icons in mobile menu -->
+                <li class="menu-item d-md-none">
+                  <a class="menu-link" href="mailto:info@fiberquil.com.ar" title="Mail"><div><i class="fas fa-envelope"></i> Mail</div></a>
+                  <a class="menu-link" href="https://wa.me/+541141573771" title="WhatsApp"><div><i class="fab fa-whatsapp"></i> WhatsApp</div></a>
+                  <a class="menu-link" href="https://www.linkedin.com/company/fiberquil-srl/about/" title="LinkedIn"><div><i class="fab fa-linkedin-in"></i> LinkedIn</div></a>
+                  <a class="menu-link" href="https://twitter.com/fiberquilsrl?lang=es" title="X"><div><i class="fab fa-x-twitter"></i> Twitter</div></a>
+                  <a class="menu-link" href="https://web.facebook.com/fiberquilfibraoptica/" title="Facebook"><div><i class="fab fa-facebook-f"></i> Facebook</div></a>
+                </li>
+              </ul>
+            </nav>
+    
           </div>
         </div>
       </div>
       <div class="header-wrap-clone"></div>
     </header>
+    
     
     <!-- #header end -->
 
