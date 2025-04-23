@@ -14,6 +14,7 @@
     rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="products.css" type="text/css" />
   <link rel="stylesheet" href="css/dark.css" type="text/css" />
   <!-- Media Agency Demo Specific Stylesheet -->
   <link rel="stylesheet" href="demos/app-landing/app-landing.css" type="text/css" />
@@ -36,15 +37,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css" />
   <!-- Font Awesome (sin integrity) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <scrip src="https://www.google.com/recaptcha/api.js" async defer>
+    </script>
 
-  <!-- Document Title
+    <!-- Document Title
 	============================================= -->
-  <title>Fiberquil | Productos</title>
+    <title>Fiberquil | Productos</title>
 </head>
 
 <body class="stretched" style="width: 100%">
@@ -85,13 +87,14 @@
             <nav class="primary-menu not-dark with-arrows">
               <ul class="menu-container not-dark">
                 <li class="menu-item">
-                  <a class="menu-link" href="#" data-scrollto="gotoTop" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+                  <a class="menu-link" href="#" data-scrollto="gotoTop" data-easing="easeInOutExpo" data-speed="1250"
+                    data-offset="160">
                     <div style="font-size: 14px;">Home</div>
                   </a>
                 </li>
               </ul>
             </nav>
-            
+
             <!-- #primary-menu end -->
           </div>
         </div>
@@ -100,30 +103,803 @@
     </header>
     <!-- #header end -->
 
-  <!-- Banner inicial -->
-  <div style="position: relative; height: 50vh; width: 100%;">
-    <!-- Video de fondo -->
-    <video autoplay muted loop
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-      <source src="img/sensatv.mov" type="video/mp4">
-      <!-- Puedes agregar más fuentes para diferentes formatos de video -->
-      Tu navegador no soporta el elemento de video.
-    </video>
+    <!-- Banner inicial -->
+    <div style="position: relative; height: 50vh; width: 100%;">
+      <!-- Video de fondo -->
+      <video autoplay muted loop
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="img/sensatv.mov" type="video/mp4">
+        <!-- Puedes agregar más fuentes para diferentes formatos de video -->
+        Tu navegador no soporta el elemento de video.
+      </video>
 
-    <!-- Título sobre el video con fondo semitransparente -->
-    <div
-      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.26); color: white; padding: 0px; border-radius: 0px; font-size: 2em; text-align: center; border-radius: 20px;">
+      <!-- Título sobre el video con fondo semitransparente -->
+      <div
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.26); color: white; padding: 0px; border-radius: 0px; font-size: 2em; text-align: center; border-radius: 20px;">
+      </div>
     </div>
-  </div>
-
-
-  <section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
+    <section class="productos-ampliado py-5 px-3 px-md-5 bg-light">
+      <div class="container-fluid">
+        <div class="row">
+
+          <input type="text" id="buscador-productos" class="form-control mb-4" placeholder="Buscar producto...">
+
+
+          <!-- Categorías -->
+          <div class="col-md-3">
+            <div class="list-group" id="lista-categorias">
+              <button class="list-group-item list-group-item-action categoria-btn active-categoria"
+                data-categoria="todos">Todos los productos</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="switch">Switch y
+                Router</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="gpon">GPON</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="video">Video</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="empalme">Cajas de
+                Empalme</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="terminacion">Cajas de
+                Terminación</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="odf">ODFs</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="splitter">Splitters</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="distribucion">Distribución</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="puntos">Puntos de
+                Terminación</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="conectores">Conectores y Adaptadores</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="cables">Cables
+                Ópticos</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="radios">Radios</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="ups">UPS</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="rack">Rack</button>
+            </div>
+          </div>
+
+
+          <!-- Grilla de productos -->
+          <div class="col-lg-9">
+            <div class="row g-4" id="grilla-productos">
+
+              <!-- SWITCHES Y ROUTERS -->
+
+              <div class="col-md-4 producto" data-categoria="switch">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router AC1200">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Router WiFi AC1200</h5>
+                    <p class="card-text">Ideal para hogares o pequeñas oficinas. Cobertura potente con doble banda 2.4 y
+                      5GHz.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="switch">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch PoE 8 Puertos">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Switch PoE 8 Puertos</h5>
+                    <p class="card-text">Conexión estable y alimentación PoE para cámaras o puntos WiFi. Ideal para
+                      CCTV.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="switch">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router Dual WAN">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Router Empresarial Dual WAN</h5>
+                    <p class="card-text">Permite balanceo de carga entre dos proveedores. Seguridad y redundancia para
+                      empresas.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="switch">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch 24 Puertos">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Switch Gigabit 24 Puertos</h5>
+                    <p class="card-text">Solución robusta para redes de alta densidad. Backplane de alto rendimiento.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- GPON -->
+
+              <div class="col-md-4 producto" data-categoria="gpon">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="ONT Huawei">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">ONT Huawei HG8546M</h5>
+                    <p class="card-text">Terminal de usuario con puertos LAN y WiFi. Ideal para conexiones FTTH.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="gpon">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="OLT ZTE C320">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">OLT ZTE C320</h5>
+                    <p class="card-text">Plataforma de acceso compacta para redes GPON. Hasta 4096 usuarios.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="gpon">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="Módulo SFP GPON">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Módulo SFP GPON</h5>
+                    <p class="card-text">Compatible con OLTs de distintas marcas. Transmisión estable y eficiente.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- VIDEO -->
+
+              <div class="col-md-4 producto" data-categoria="video">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Bullet 4MP">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cámara IP Bullet 4MP</h5>
+                    <p class="card-text">Alta definición, lente fija, visión nocturna y protección IP67 para exteriores.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="video">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Domo HD">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cámara Domo IR Full HD</h5>
+                    <p class="card-text">Instalación interior/exterior, gran angular y visión nocturna con infrarrojo.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="video">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="NVR 8 Canales">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">NVR 8 Canales H.265</h5>
+                    <p class="card-text">Graba múltiples cámaras IP en alta compresión. Compatible con ONVIF.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="video">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Monitor Seguridad 21.5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Monitor LED 21.5” Seguridad</h5>
+                    <p class="card-text">Alta resolución y conexión HDMI/VGA. Especial para salas de monitoreo.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EMPALME -->
+
+              <div class="col-md-4 producto" data-categoria="empalme">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja de empalme 24 fibras">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja de Empalme 24 Fibras</h5>
+                    <p class="card-text">Caja estanca para empalmes ópticos. Protección contra humedad y polvo. Incluye
+                      bandejas.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="empalme">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja tipo domo 96 fibras">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja Domo 96 Fibras</h5>
+                    <p class="card-text">Instalación aérea o subterránea. Con capacidad para 96 empalmes. Alta
+                      durabilidad.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- CAJAS DE TERMINACIÓN -->
+
+              <div class="col-md-4 producto" data-categoria="terminacion">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
+                    alt="Caja terminal 1 puerto SC/APC">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja Terminal 1 Puerto SC/APC</h5>
+                    <p class="card-text">Compacta y de fácil instalación. Ideal para uso residencial y pequeño
+                      comercial.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="terminacion">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
+                    alt="Caja terminal 4 puertos">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja Terminal 4 Puertos SC</h5>
+                    <p class="card-text">Para aplicaciones FTTH. Con entrada lateral de cable y soporte para splitter
+                      interno.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- ODF -->
+
+              <div class="col-md-4 producto" data-categoria="odf">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 24 puertos">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">ODF 24 Puertos SC/APC</h5>
+                    <p class="card-text">Marco de distribución óptica para montaje en rack, ideal para pequeñas redes
+                      FTTH.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="odf">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 48 puertos">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">ODF 48 Puertos SC/UPC</h5>
+                    <p class="card-text">Estructura metálica con bandejas deslizables. Conectores preinstalados y
+                      numeración frontal.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- SPLITTERS -->
+
+              <div class="col-md-4 producto" data-categoria="splitter">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Splitter 1x8 SC/APC</h5>
+                    <p class="card-text">Distribuidor óptico pasivo con conectores SC/APC. Carcasa mini para empotrar en
+                      cajas FTTH.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="splitter">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x16 Cassette">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Splitter 1x16 tipo Cassette</h5>
+                    <p class="card-text">Diseñado para racks y ODFs. Equilibrio de potencia y baja atenuación.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="splitter">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Splitter óptico 1x8 SC/APC</h5>
+                    <p class="card-text">Reparte la señal óptica a múltiples usuarios con mínima pérdida.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DISTRIBUCIÓN -->
+
+              <div class="col-md-4 producto" data-categoria="distribucion">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
+                    alt="Caja de distribución 16P">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja de Distribución 16 Puertos</h5>
+                    <p class="card-text">Ideal para FTTH. Protección IP65, entradas de cable preperforadas y bandeja
+                      interna.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="distribucion">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
+                    alt="Caja distrib. 8P con splitter">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caja de Distribución 8P + Splitter</h5>
+                    <p class="card-text">Caja para montaje en poste o pared. Incluye splitter 1x8 preinstalado y
+                      conectorizado.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- PUNTOS DE TERMINACIÓN -->
+
+              <div class="col-md-4 producto" data-categoria="puntos">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
+                    alt="Roseta óptica 1 puerto">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Roseta Óptica 1 Puerto</h5>
+                    <p class="card-text">Toma de fibra para interior. Diseñada para facilitar el acceso final a los
+                      usuarios.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="puntos">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4" alt="Roseta doble SC/APC">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Roseta Óptica Doble SC</h5>
+                    <p class="card-text">Compacta, incluye soporte interno para empalme mecánico o fusión. Color blanco
+                      estético.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- CONECTORES Y ADAPTADORES -->
+
+              <div class="col-md-4 producto" data-categoria="conectores">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4" alt="Conector SC/APC">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Conector SC/APC</h5>
+                    <p class="card-text">Conector pre-pulido para terminación rápida en campo. Ideal para redes FTTH y
+                      empresariales.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="conectores">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4"
+                    alt="Adaptador SC/UPC Dúplex">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Adaptador SC/UPC Dúplex</h5>
+                    <p class="card-text">Cuerpo de polímero de alta precisión. Apto para montaje en bandejas, paneles y
+                      ODFs.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- CABLES ÓPTICOS -->
+
+              <div class="col-md-4 producto" data-categoria="cables">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4" alt="Patchcord SC/APC 3m">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Patchcord SC/APC 3 metros</h5>
+                    <p class="card-text">Fibra monomodo simplex. Ideal para conexiones entre ODF y equipos activos.
+                      Incluye férula cerámica.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 producto" data-categoria="cables">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4"
+                    alt="Cable óptico preconectorizado 50m">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cable Óptico Preconectorizado 50m</h5>
+                    <p class="card-text">Solución plug & play para despliegue rápido. Conector SC/APC en ambos extremos.
+                      Diámetro 3mm.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- RADIOS -->
+
+              <div class="col-md-4 producto" data-categoria="radios">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/RADIOS.png" class="card-img-top p-4" alt="Enlace Ubiquiti 5GHz">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Enlace Ubiquiti 5GHz</h5>
+                    <p class="card-text">Solución PTP de alta capacidad. Antena integrada y hasta 450 Mbps reales en
+                      campo.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- UPS -->
+
+              <div class="col-md-4 producto" data-categoria="ups">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/UPS.png" class="card-img-top p-4" alt="UPS 1000VA">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">UPS 1000VA Interactiva</h5>
+                    <p class="card-text">Provee energía continua a equipos críticos. Incluye software de monitoreo y
+                      puertos USB.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- RACK -->
+
+              <div class="col-md-4 producto" data-categoria="rack">
+                <div class="card h-100 shadow-sm producto-hover2">
+                  <img src="img/productos/RACK.png" class="card-img-top p-4" alt="Rack 42U piso">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Rack 42U Piso 19”</h5>
+                    <p class="card-text">Estructura metálica robusta, puertas de vidrio templado. Ideal para salas de
+                      servidores.</p>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+                    <div class="d-flex gap-3">
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
+                          class="fab fa-whatsapp"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
+                          class="fas fa-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -161,22 +937,25 @@
 
 
 
-  
- </section>
-  <!-- Footer
+
+
+
+
+
+    <!-- Footer
 		============================================= -->
     <footer id="footer" class="dark border-0">
 
       <div class="container center">
         <div class="footer-widgets-wrap">
-  
+
           <div class="row mx-auto clearfix">
-  
+
             <div class="col-lg-4">
-  
+
               <div class="widget clearfix">
                 <h4>Links</h4>
-  
+
                 <ul class="list-unstyled footer-site-links mb-0">
                   <li><a href="#" data-scrollto="#section-somos" data-easing="easeInOutExpo" data-speed="1250"
                       data-offset="70">Quienes somos</a></li>
@@ -192,14 +971,14 @@
                       data-offset="70">Formulario</a></li>
                 </ul>
               </div>
-  
+
             </div>
-  
+
             <div class="col-lg-4">
-  
+
               <div class="widget subscribe-widget clearfix" data-loader="button">
                 <h4>FIBERQUIL S.R.L</h4>
-  
+
                 <div class="widget-subscribe-form-result"></div>
                 <!-- #suscribe 
                 <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
@@ -232,52 +1011,84 @@
                   </a>
                 </div>
               </div>
-  
+
             </div>
-  
+
             <div class="col-lg-4">
-  
+
               <div class="widget clearfix">
                 <h4>Contacto</h4>
-  
+
                 <p style="font-size: medium;" class="lead">Av Calchaqui 2371 Quilmes, BS.AS</p>
                 <p style="font-size: medium;" class="lead">Av Maestro Vidal 1027, Córdoba capital</p>
                 <p style="font-size: medium;" class="lead">Calle 160 Bis N°583 La Plata, BS.AS</p>
-  
-  
+
+
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
       </div>
-  
+
       <div id="copyrights">
         <div class="container center clearfix">
           Fiberquil SRL | Fibra Óptica y Cableado estructurado
         </div>
       </div>
-  
-    </footer>
-  <!-- #footer end -->
-  <!-- #wrapper end -->
-  <!-- Go To Top
-	============================================= -->
-  <div class=""></div>
-  <a class="floating-button" href="https://wa.me/+541141573771" target="_blank" rel="noopener noreferrer"></a>
-  <!-- JavaScripts
-	============================================= -->
 
-   
-  </script>
-  <script src="js/jquery.js"></script>
-  <script src="js/plugins.min.js"></script>
-  <script src="script.js"></script>
-  <!-- Footer Scripts
+    </footer>
+    <!-- #footer end -->
+    <!-- #wrapper end -->
+    <!-- Go To Top
 	============================================= -->
-  <script src="js/functions.js"></script>
+    <div class=""></div>
+    <a class="floating-button" href="https://wa.me/+541141573771" target="_blank" rel="noopener noreferrer"></a>
+    <!-- JavaScripts
+	============================================= -->
+    <script>
+      document.querySelectorAll('.categoria-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          // Remover clase activa de todos
+          document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active-categoria'));
+
+          // Activar el clickeado
+          this.classList.add('active-categoria');
+
+          const categoria = this.dataset.categoria;
+
+          // Mostrar/ocultar productos
+          document.querySelectorAll('.producto').forEach(prod => {
+            if (categoria === 'todos' || prod.dataset.categoria === categoria) {
+              prod.style.display = 'block';
+            } else {
+              prod.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.getElementById('buscador-productos').addEventListener('input', function () {
+        const texto = this.value.toLowerCase();
+        document.querySelectorAll('.producto').forEach(prod => {
+          const nombre = prod.querySelector('.card-title').textContent.toLowerCase();
+          prod.style.display = nombre.includes(texto) ? 'block' : 'none';
+        });
+      });
+
+    </script>
+
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
