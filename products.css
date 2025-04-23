@@ -43,4 +43,33 @@
     background-color: #b85306 !important;
     color: white;
   }
+
+  .pagination .page-item.active .page-link {
+    background-color: #f15a24;
+    border-color: #f15a24;
+    color: white;
+  }
+  
+  .pagination .page-link {
+    color: #f15a24;
+  }
+
+  .pagination .page-item.disabled .page-link {
+    color: #999;
+    background-color: transparent;
+    border: none;
+  }
+
+  .producto {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .producto.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
   
