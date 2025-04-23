@@ -41,12 +41,12 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <scrip src="https://www.google.com/recaptcha/api.js" async defer>
-    </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer>
+  </script>
 
-    <!-- Document Title
+  <!-- Document Title
 	============================================= -->
-    <title>Fiberquil | Productos</title>
+  <title>Fiberquil | Productos</title>
 </head>
 
 <body class="stretched" style="width: 100%">
@@ -55,52 +55,53 @@
   <div id="wrapper" class="clearfix">
     <!-- Header
 		============================================= -->
-    <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark"
-      data-responsive-class="not-dark">
+    <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
       <div id="header-wrap">
         <div class="container">
-          <div class="header-row">
-            <!-- Logo
-						============================================= -->
+          <div class="header-row justify-content-between align-items-center">
+    
+            <!-- Logo -->
             <div id="logo">
-              <a href="https://fiberquil.com.ar/" class="standard-logo tamañoPic"
-                data-dark-logo="fiberquilNewRemove"><img src="img/logoFiber-removebg.png" alt=""></a>
-              <a href="https://fiberquil.com.ar/" class="retina-logo" data-dark-logo="fiberquilNewRemove"><img
-                  src="img/logoFiber-removebg.png" alt=""></a>
+              <a href="https://fiberquil.com.ar/" class="standard-logo tamañoPic">
+                <img src="img/logoFiber-removebg.png" alt="">
+              </a>
+              <a href="https://fiberquil.com.ar/" class="retina-logo">
+                <img src="img/logoFiber-removebg.png" alt="">
+              </a>
             </div>
-            <div class="header-misc">
+    
+            <!-- Botón Home -->
+            <div class="d-none d-md-block">
+              <a href="index.html" class="btn btn-warning text-white fw-bold px-4 py-2" style="border-radius: 8px; transition: all 0.3s;">
+                Volver al Home
+              </a>
             </div>
-            <div id="primary-menu-trigger">
-              <svg class="svg-trigger" viewBox="0 0 100 100">
-                <path
-                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-                </path>
-                <path d="m 30,50 h 40"></path>
-                <path
-                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-                </path>
-              </svg>
+    
+            <!-- Iconos sociales -->
+            <div class="d-flex gap-2">
+              <a href="mailto:info@fiberquil.com.ar" target="_blank" class="btn btn-outline-light btn-sm" title="Mail" style="border-radius: 10px;">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm" title="WhatsApp" style="border-radius: 10px;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fiberquil-srl/about/" target="_blank" class="btn btn-outline-info btn-sm" title="LinkedIn" style="border-radius: 10px;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/fiberquilsrl?lang=es" target="_blank" class="btn btn-outline-primary btn-sm" title="X (Twitter)" style="border-radius: 10px;">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://web.facebook.com/fiberquilfibraoptica/" target="_blank" class="btn btn-outline-primary btn-sm" title="Facebook" style="border-radius: 10px;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
             </div>
-
-            <!-- Primary Navigation
-						============================================= -->
-            <nav class="primary-menu not-dark with-arrows">
-              <ul class="menu-container not-dark">
-                <li class="menu-item">
-                  <a class="menu-link" href="#" data-scrollto="gotoTop" data-easing="easeInOutExpo" data-speed="1250"
-                    data-offset="160">
-                    <div style="font-size: 14px;">Home</div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <!-- #primary-menu end -->
+    
           </div>
         </div>
       </div>
       <div class="header-wrap-clone"></div>
     </header>
+    
     <!-- #header end -->
 
     <!-- Banner inicial -->
@@ -122,13 +123,21 @@
 
 
 
+
+
     <section class="productos-ampliado py-5 px-3 px-md-5 bg-light">
+      <div>
+        <div class="container text-center py-5">
+          <h2 class="display-4">Productos</h2>
+          <p class="lead">Descubre nuestra amplia gama de productos para soluciones de conectividad y
+            telecomunicaciones.</p>
+        </div>
+      </div>
+      <br>
       <div class="container-fluid">
         <div class="row">
-
-          <input type="text" id="buscador-productos" class="form-control mb-4" placeholder="Buscar producto...">
-
-
+          <input type="text" id="buscador-productos" class="form-control mb-4" style="border-radius: 10px;"
+            placeholder="Buscar producto...">
           <!-- Categorías -->
           <div class="col-md-3">
             <div class="list-group" id="lista-categorias">
@@ -169,6 +178,8 @@
 
               <div class="col-md-4 producto" data-categoria="switch">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
+                    ROUTERS</span>
                   <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router AC1200">
                   <div class="card-body text-center">
                     <h5 class="card-title">Router WiFi AC1200</h5>
@@ -178,21 +189,26 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
+
                 </div>
               </div>
 
               <div class="col-md-4 producto" data-categoria="switch">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
+                    ROUTERS</span>
                   <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch PoE 8 Puertos">
                   <div class="card-body text-center">
                     <h5 class="card-title">Switch PoE 8 Puertos</h5>
@@ -202,14 +218,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -217,6 +235,8 @@
 
               <div class="col-md-4 producto" data-categoria="switch">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
+                    ROUTERS</span>
                   <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router Dual WAN">
                   <div class="card-body text-center">
                     <h5 class="card-title">Router Empresarial Dual WAN</h5>
@@ -226,14 +246,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -241,6 +263,8 @@
 
               <div class="col-md-4 producto" data-categoria="switch">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
+                    ROUTERS</span>
                   <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch 24 Puertos">
                   <div class="card-body text-center">
                     <h5 class="card-title">Switch Gigabit 24 Puertos</h5>
@@ -250,14 +274,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -268,6 +294,7 @@
 
               <div class="col-md-4 producto" data-categoria="gpon">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
                   <img src="img/productos/GPON.png" class="card-img-top p-4" alt="ONT Huawei">
                   <div class="card-body text-center">
                     <h5 class="card-title">ONT Huawei HG8546M</h5>
@@ -276,14 +303,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -291,6 +320,7 @@
 
               <div class="col-md-4 producto" data-categoria="gpon">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
                   <img src="img/productos/GPON.png" class="card-img-top p-4" alt="OLT ZTE C320">
                   <div class="card-body text-center">
                     <h5 class="card-title">OLT ZTE C320</h5>
@@ -299,14 +329,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -314,6 +346,7 @@
 
               <div class="col-md-4 producto" data-categoria="gpon">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
                   <img src="img/productos/GPON.png" class="card-img-top p-4" alt="Módulo SFP GPON">
                   <div class="card-body text-center">
                     <h5 class="card-title">Módulo SFP GPON</h5>
@@ -322,14 +355,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -340,6 +375,8 @@
 
               <div class="col-md-4 producto" data-categoria="video">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">VIDEO</span>
                   <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Bullet 4MP">
                   <div class="card-body text-center">
                     <h5 class="card-title">Cámara IP Bullet 4MP</h5>
@@ -349,14 +386,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -364,6 +403,8 @@
 
               <div class="col-md-4 producto" data-categoria="video">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">VIDEO</span>
                   <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Domo HD">
                   <div class="card-body text-center">
                     <h5 class="card-title">Cámara Domo IR Full HD</h5>
@@ -373,14 +414,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -388,6 +431,8 @@
 
               <div class="col-md-4 producto" data-categoria="video">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">VIDEO</span>
                   <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="NVR 8 Canales">
                   <div class="card-body text-center">
                     <h5 class="card-title">NVR 8 Canales H.265</h5>
@@ -396,14 +441,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -411,6 +458,8 @@
 
               <div class="col-md-4 producto" data-categoria="video">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">VIDEO</span>
                   <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Monitor Seguridad 21.5">
                   <div class="card-body text-center">
                     <h5 class="card-title">Monitor LED 21.5” Seguridad</h5>
@@ -419,14 +468,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -436,6 +487,8 @@
 
               <div class="col-md-4 producto" data-categoria="empalme">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">EMPALME</span>
                   <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja de empalme 24 fibras">
                   <div class="card-body text-center">
                     <h5 class="card-title">Caja de Empalme 24 Fibras</h5>
@@ -445,11 +498,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
                       <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
                         title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
-                          class="fas fa-envelope"></i></a>
                     </div>
                   </div>
                 </div>
@@ -457,6 +515,8 @@
 
               <div class="col-md-4 producto" data-categoria="empalme">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">EMPALME</span>
                   <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja tipo domo 96 fibras">
                   <div class="card-body text-center">
                     <h5 class="card-title">Caja Domo 96 Fibras</h5>
@@ -466,11 +526,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
                       <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
                         title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
-                          class="fas fa-envelope"></i></a>
                     </div>
                   </div>
                 </div>
@@ -481,6 +546,8 @@
 
               <div class="col-md-4 producto" data-categoria="terminacion">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
+                    TERMINACIÓN</span>
                   <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
                     alt="Caja terminal 1 puerto SC/APC">
                   <div class="card-body text-center">
@@ -491,11 +558,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
                       <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
                         title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
-                          class="fas fa-envelope"></i></a>
                     </div>
                   </div>
                 </div>
@@ -503,6 +575,8 @@
 
               <div class="col-md-4 producto" data-categoria="terminacion">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
+                    TERMINACIÓN</span>
                   <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
                     alt="Caja terminal 4 puertos">
                   <div class="card-body text-center">
@@ -513,11 +587,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
                       <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
                         title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email"><i
-                          class="fas fa-envelope"></i></a>
                     </div>
                   </div>
                 </div>
@@ -528,6 +607,7 @@
 
               <div class="col-md-4 producto" data-categoria="odf">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">ODF</span>
                   <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 24 puertos">
                   <div class="card-body text-center">
                     <h5 class="card-title">ODF 24 Puertos SC/APC</h5>
@@ -537,11 +617,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -549,6 +634,7 @@
 
               <div class="col-md-4 producto" data-categoria="odf">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">ODF</span>
                   <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 48 puertos">
                   <div class="card-body text-center">
                     <h5 class="card-title">ODF 48 Puertos SC/UPC</h5>
@@ -558,11 +644,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -573,6 +664,8 @@
 
               <div class="col-md-4 producto" data-categoria="splitter">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">SPLITTERS</span>
                   <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
                   <div class="card-body text-center">
                     <h5 class="card-title">Splitter 1x8 SC/APC</h5>
@@ -582,11 +675,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -594,6 +692,8 @@
 
               <div class="col-md-4 producto" data-categoria="splitter">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">SPLITTERS</span>
                   <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x16 Cassette">
                   <div class="card-body text-center">
                     <h5 class="card-title">Splitter 1x16 tipo Cassette</h5>
@@ -602,11 +702,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -614,6 +719,8 @@
 
               <div class="col-md-4 producto" data-categoria="splitter">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">SPLITTERS</span>
                   <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
                   <div class="card-body text-center">
                     <h5 class="card-title">Splitter óptico 1x8 SC/APC</h5>
@@ -622,14 +729,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm" title="Email">
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
                         <i class="fas fa-envelope"></i>
                       </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -639,6 +748,8 @@
 
               <div class="col-md-4 producto" data-categoria="distribucion">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
+                    DISTRIBUCIÓN</span>
                   <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
                     alt="Caja de distribución 16P">
                   <div class="card-body text-center">
@@ -649,11 +760,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -661,6 +777,8 @@
 
               <div class="col-md-4 producto" data-categoria="distribucion">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
+                    DISTRIBUCIÓN</span>
                   <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
                     alt="Caja distrib. 8P con splitter">
                   <div class="card-body text-center">
@@ -671,11 +789,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -686,6 +809,8 @@
 
               <div class="col-md-4 producto" data-categoria="puntos">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">PUNTOS DE
+                    DISTRIBUCIÓN</span>
                   <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
                     alt="Roseta óptica 1 puerto">
                   <div class="card-body text-center">
@@ -696,11 +821,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -708,6 +838,8 @@
 
               <div class="col-md-4 producto" data-categoria="puntos">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">PUNTOS DE
+                    DISTRIBUCIÓN</span>
                   <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4" alt="Roseta doble SC/APC">
                   <div class="card-body text-center">
                     <h5 class="card-title">Roseta Óptica Doble SC</h5>
@@ -717,11 +849,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -732,6 +869,8 @@
 
               <div class="col-md-4 producto" data-categoria="conectores">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CONECTORES
+                    Y ADAPTADORES</span>
                   <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4" alt="Conector SC/APC">
                   <div class="card-body text-center">
                     <h5 class="card-title">Conector SC/APC</h5>
@@ -741,11 +880,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -753,6 +897,8 @@
 
               <div class="col-md-4 producto" data-categoria="conectores">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CONECTORES
+                    Y ADAPTADORES</span>
                   <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4"
                     alt="Adaptador SC/UPC Dúplex">
                   <div class="card-body text-center">
@@ -763,11 +909,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -778,6 +929,8 @@
 
               <div class="col-md-4 producto" data-categoria="cables">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CABLES
+                    ÓPTICOS</span>
                   <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4" alt="Patchcord SC/APC 3m">
                   <div class="card-body text-center">
                     <h5 class="card-title">Patchcord SC/APC 3 metros</h5>
@@ -787,11 +940,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -799,6 +957,8 @@
 
               <div class="col-md-4 producto" data-categoria="cables">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CABLES
+                    ÓPTICOS</span>
                   <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4"
                     alt="Cable óptico preconectorizado 50m">
                   <div class="card-body text-center">
@@ -809,11 +969,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -824,6 +989,8 @@
 
               <div class="col-md-4 producto" data-categoria="radios">
                 <div class="card h-100 shadow-sm producto-hover2">
+                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
+                    style="color: white;">RADIOS</span>
                   <img src="img/productos/RADIOS.png" class="card-img-top p-4" alt="Enlace Ubiquiti 5GHz">
                   <div class="card-body text-center">
                     <h5 class="card-title">Enlace Ubiquiti 5GHz</h5>
@@ -833,11 +1000,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -857,11 +1029,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -881,11 +1058,16 @@
                   <div
                     class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
                     <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-3">
-                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"><i
-                          class="fab fa-whatsapp"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar" class="btn btn-outline-primary btn-sm"><i
-                          class="fas fa-envelope"></i></a>
+                    <div class="d-flex gap-2">
+                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
+                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
+                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1081,6 +1263,17 @@
       });
 
     </script>
+    <script>
+      const modalConsulta = document.getElementById('modalConsulta');
+      modalConsulta.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const producto = button.getAttribute('data-producto');
+        const input = modalConsulta.querySelector('#productoSeleccionado');
+        input.value = producto;
+        modalConsulta.querySelector('#modalConsultaLabel').textContent = `Consulta por: ${producto}`;
+      });
+    </script>
+
 
     </script>
     <script src="js/jquery.js"></script>
@@ -1089,6 +1282,11 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
+    <!-- Bootstrap 5 JS (para modales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qE+9aLJ7LvTqYlUVtMRbDRX4kINgJBCWUv4gImK0kW/qlnNbdh5T+pHsnDymGDE/"
+      crossorigin="anonymous"></script>
+
 </body>
 
 </html>
