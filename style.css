@@ -1,5 +1,12 @@
 /*Codigo nuevo*/
 
+
+@media (max-width: 767px) {
+	#logo {
+	  display: none !important;
+	}
+  }
+  
   
 
 /* Estilos generales del botón flotante */
