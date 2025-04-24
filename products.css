@@ -111,4 +111,15 @@
   }
   
   
+  .texto-filtro-mobile {
+    display: block;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
   
