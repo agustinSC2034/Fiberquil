@@ -21,6 +21,91 @@
 	transform: scale(1.1);
 }
 
+/*servicios*/
+
+.separador-fiberquil {
+	background-color: #302f2f;
+	padding: 50px 0;
+	text-align: center;
+  }
+  
+  .frase-fiberquil {
+	color: orangered;
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease, transform 2.5s ease;
+  }
+  
+  .linea-con-sol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+  }
+  
+  .linea-naranja {
+	height: 4px;
+	background-color: rgb(120, 44, 16);
+	width: 60%;
+	max-width: 600px;
+	border-radius: 4px;
+  }
+  
+  .sol-fiberquil {
+	height: 30px;
+	width: auto;
+  }
+
+  @keyframes aparecerDesdeAbajo {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .frase-fiberquil {
+	animation: aparecerDesdeAbajo 1.5s ease-out both;
+  }
+
+  .sol-fiberquil {
+	animation: girar 4s linear infinite;
+  }
+  
+  .sol-fiberquil {
+	animation: pulso 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulso {
+	0%, 100% { transform: scale(1); }
+	50% { transform: scale(1.20); }
+  }
+
+  .separador-fiberquil .frase-fiberquil {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .separador-fiberquil.animado .frase-fiberquil {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+  
+  
+  
+
 /*Productos*/
 .producto-hover img {
 	height: 100px;

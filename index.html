@@ -60,6 +60,11 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/colors.php?color=c0bb62" type="text/css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   <!-- Document Title
 	============================================= -->
   <title>Fiberquil</title>
@@ -309,12 +314,12 @@
       </div>
   </div>
 
-  <br> <br>
+  <br>
 
 
   <div>
     <div class="section dark m-0 border-0 containerMIO1">
-      <div class="row col-mb-50 mb-0 containerMIO">
+      <div class="row col-mb-20 mb-0 containerMIO">
         <div class="col-lg-4">
           <div class="heading-block fancy-title border-bottom-0 title-bottom-border">
             <h4>Nuestra <span>empresa</span>.</h4>
@@ -739,6 +744,21 @@
         </div>
       </div>
     </div>
+
+    <br><br>
+
+<!-- Separador con línea estilo Fiberquil -->
+<div class="separador-fiberquil">
+  <h3 class="frase-fiberquil">
+    Tecnología que conecta, soluciones que transforman | FIBERQUIL
+    <img src="img/descarga.png" alt="Sol Fiberquil" class="sol-fiberquil" style="width: 50px; height: 50px;">
+  </h3>
+</div>
+
+
+
+
+
   
 
   <!--
@@ -759,7 +779,7 @@
   -->
   
 
-  <section id="productos" class="py-5" style="margin-top: 8%;">
+  <section id="productos" class="py-5" style="margin-top: 3%;">
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="fw-bold">Productos</h2>
@@ -831,6 +851,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Separador cierre de productos -->
+<div class="separador-fiberquil cierre-productos">
+  <h3 class="frase-fiberquil">
+    Conectamos tecnología con eficiencia | FIBERQUIL
+    <img src="img/descarga.png" alt="Sol Fiberquil" class="sol-fiberquil" style="width: 50px; height: 50px;">
+  </h3>
+</div>
+
   
   
 
@@ -897,6 +926,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Separador final de proyectos -->
+<div class="separador-fiberquil separador-proyectos">
+  <h3 class="frase-fiberquil">
+    Proyectos que conectan futuro con tecnología | FIBERQUIL
+    <img src="img/descarga.png" alt="Sol Fiberquil" class="sol-fiberquil" style="width: 50px; height: 50px;">
+  </h3>
+</div>
+
   
 
   <br><br><br>
@@ -1427,6 +1465,22 @@
     });
 
   </script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animado');
+        }
+      });
+    }, {
+      threshold: 0.7 // Aplica cuando el 50% del bloque es visible
+    });
+  
+    document.querySelectorAll('.separador-fiberquil').forEach(separador => {
+      observer.observe(separador);
+    });
+  </script>
+  
 </body>
 
 </html>
