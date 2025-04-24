@@ -180,17 +180,18 @@
       <div class="container-fluid">
         <div class="row">
 
-                   <!-- Filtro móvil solo visible en mobile -->
-<div class="filtro-categorias-mobile d-md-none mb-3">
-  <button class="btn btn-outline-dark w-100" id="toggleCategoriasMobile">
-    Filtrar por categoría <i class="fas fa-chevron-down"></i>
-  </button>
-  <div id="filtroSeleccionadoMobile" class="texto-filtro-mobile mt-2"></div>
-  <div id="filtroSeleccionadoMobile" class="mt-2 text-center text-muted small" style="font-weight: bold;"></div>
-  <div id="listaCategoriasMobile" style="display: none;" class="mt-2">
-    <!-- Acá se copia lo que hay en #lista-categorias -->
-  </div>
-</div>
+          <!-- Filtro móvil solo visible en mobile -->
+          <div class="filtro-categorias-mobile d-md-none mb-3">
+            <button class="btn btn-outline-dark w-100" id="toggleCategoriasMobile">
+              Filtrar por categoría <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="filtroSeleccionadoMobile" class="texto-filtro-mobile mt-2"></div>
+            <div id="filtroSeleccionadoMobile" class="mt-2 text-center text-muted small" style="font-weight: bold;">
+            </div>
+            <div id="listaCategoriasMobile" style="display: none;" class="mt-2">
+              <!-- Acá se copia lo que hay en #lista-categorias -->
+            </div>
+          </div>
 
 
 
@@ -233,1006 +234,6 @@
           <div class="col-lg-9">
             <div class="row g-4" id="grilla-productos">
               <!-- Aquí se van a insertar las cards -->
-            </div>
-
-            <!--Este es el actual a eliminar -->
-            <div class="row g-4" id="grilla-productos">
-
-              <!-- SWITCHES Y ROUTERS -->
-
-              <div class="col-md-4 producto" data-categoria="switch">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
-                    ROUTERS</span>
-                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router AC1200">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Router WiFi AC1200</h5>
-                    <p class="card-text">Ideal para hogares o pequeñas oficinas. Cobertura potente con doble banda 2.4 y
-                      5GHz.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="switch">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
-                    ROUTERS</span>
-                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch PoE 8 Puertos">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Switch PoE 8 Puertos</h5>
-                    <p class="card-text">Conexión estable y alimentación PoE para cámaras o puntos WiFi. Ideal para
-                      CCTV.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="switch">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
-                    ROUTERS</span>
-                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Router Dual WAN">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Router Empresarial Dual WAN</h5>
-                    <p class="card-text">Permite balanceo de carga entre dos proveedores. Seguridad y redundancia para
-                      empresas.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="switch">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">SWITCH |
-                    ROUTERS</span>
-                  <img src="img/productos/EPON.png" class="card-img-top p-4" alt="Switch 24 Puertos">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Switch Gigabit 24 Puertos</h5>
-                    <p class="card-text">Solución robusta para redes de alta densidad. Backplane de alto rendimiento.
-                    </p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- GPON -->
-
-              <div class="col-md-4 producto" data-categoria="gpon">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
-                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="ONT Huawei">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">ONT Huawei HG8546M</h5>
-                    <p class="card-text">Terminal de usuario con puertos LAN y WiFi. Ideal para conexiones FTTH.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="gpon">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
-                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="OLT ZTE C320">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">OLT ZTE C320</h5>
-                    <p class="card-text">Plataforma de acceso compacta para redes GPON. Hasta 4096 usuarios.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="gpon">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">GPON</span>
-                  <img src="img/productos/GPON.png" class="card-img-top p-4" alt="Módulo SFP GPON">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Módulo SFP GPON</h5>
-                    <p class="card-text">Compatible con OLTs de distintas marcas. Transmisión estable y eficiente.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- VIDEO -->
-
-              <div class="col-md-4 producto" data-categoria="video">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">VIDEO</span>
-                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Bullet 4MP">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Cámara IP Bullet 4MP</h5>
-                    <p class="card-text">Alta definición, lente fija, visión nocturna y protección IP67 para exteriores.
-                    </p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="video">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">VIDEO</span>
-                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Cámara Domo HD">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Cámara Domo IR Full HD</h5>
-                    <p class="card-text">Instalación interior/exterior, gran angular y visión nocturna con infrarrojo.
-                    </p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="video">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">VIDEO</span>
-                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="NVR 8 Canales">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">NVR 8 Canales H.265</h5>
-                    <p class="card-text">Graba múltiples cámaras IP en alta compresión. Compatible con ONVIF.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="video">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">VIDEO</span>
-                  <img src="img/productos/CAMARA.png" class="card-img-top p-4" alt="Monitor Seguridad 21.5">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Monitor LED 21.5” Seguridad</h5>
-                    <p class="card-text">Alta resolución y conexión HDMI/VGA. Especial para salas de monitoreo.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- EMPALME -->
-
-              <div class="col-md-4 producto" data-categoria="empalme">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">EMPALME</span>
-                  <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja de empalme 24 fibras">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja de Empalme 24 Fibras</h5>
-                    <p class="card-text">Caja estanca para empalmes ópticos. Protección contra humedad y polvo. Incluye
-                      bandejas.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="empalme">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">EMPALME</span>
-                  <img src="img/productos/CAJAEMPALME.png" class="card-img-top p-4" alt="Caja tipo domo 96 fibras">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja Domo 96 Fibras</h5>
-                    <p class="card-text">Instalación aérea o subterránea. Con capacidad para 96 empalmes. Alta
-                      durabilidad.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- CAJAS DE TERMINACIÓN -->
-
-              <div class="col-md-4 producto" data-categoria="terminacion">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
-                    TERMINACIÓN</span>
-                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
-                    alt="Caja terminal 1 puerto SC/APC">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja Terminal 1 Puerto SC/APC</h5>
-                    <p class="card-text">Compacta y de fácil instalación. Ideal para uso residencial y pequeño
-                      comercial.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="terminacion">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
-                    TERMINACIÓN</span>
-                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
-                    alt="Caja terminal 4 puertos">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja Terminal 4 Puertos SC</h5>
-                    <p class="card-text">Para aplicaciones FTTH. Con entrada lateral de cable y soporte para splitter
-                      interno.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- ODF -->
-
-              <div class="col-md-4 producto" data-categoria="odf">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">ODF</span>
-                  <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 24 puertos">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">ODF 24 Puertos SC/APC</h5>
-                    <p class="card-text">Marco de distribución óptica para montaje en rack, ideal para pequeñas redes
-                      FTTH.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="odf">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">ODF</span>
-                  <img src="img/productos/ODF.png" class="card-img-top p-4" alt="ODF 48 puertos">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">ODF 48 Puertos SC/UPC</h5>
-                    <p class="card-text">Estructura metálica con bandejas deslizables. Conectores preinstalados y
-                      numeración frontal.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- SPLITTERS -->
-
-              <div class="col-md-4 producto" data-categoria="splitter">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">SPLITTERS</span>
-                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Splitter 1x8 SC/APC</h5>
-                    <p class="card-text">Distribuidor óptico pasivo con conectores SC/APC. Carcasa mini para empotrar en
-                      cajas FTTH.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="splitter">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">SPLITTERS</span>
-                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x16 Cassette">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Splitter 1x16 tipo Cassette</h5>
-                    <p class="card-text">Diseñado para racks y ODFs. Equilibrio de potencia y baja atenuación.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="splitter">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">SPLITTERS</span>
-                  <img src="img/productos/SPLITTERS.png" class="card-img-top p-4" alt="Splitter 1x8">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Splitter óptico 1x8 SC/APC</h5>
-                    <p class="card-text">Reparte la señal óptica a múltiples usuarios con mínima pérdida.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- DISTRIBUCIÓN -->
-
-              <div class="col-md-4 producto" data-categoria="distribucion">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
-                    DISTRIBUCIÓN</span>
-                  <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
-                    alt="Caja de distribución 16P">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja de Distribución 16 Puertos</h5>
-                    <p class="card-text">Ideal para FTTH. Protección IP65, entradas de cable preperforadas y bandeja
-                      interna.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="distribucion">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CAJAS DE
-                    DISTRIBUCIÓN</span>
-                  <img src="img/productos/CAJASDEDISTRIBUCION.png" class="card-img-top p-4"
-                    alt="Caja distrib. 8P con splitter">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Caja de Distribución 8P + Splitter</h5>
-                    <p class="card-text">Caja para montaje en poste o pared. Incluye splitter 1x8 preinstalado y
-                      conectorizado.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- PUNTOS DE TERMINACIÓN -->
-
-              <div class="col-md-4 producto" data-categoria="puntos">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">PUNTOS DE
-                    DISTRIBUCIÓN</span>
-                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4"
-                    alt="Roseta óptica 1 puerto">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Roseta Óptica 1 Puerto</h5>
-                    <p class="card-text">Toma de fibra para interior. Diseñada para facilitar el acceso final a los
-                      usuarios.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="puntos">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">PUNTOS DE
-                    DISTRIBUCIÓN</span>
-                  <img src="img/productos/PUNTOSDETERMINACION.png" class="card-img-top p-4" alt="Roseta doble SC/APC">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Roseta Óptica Doble SC</h5>
-                    <p class="card-text">Compacta, incluye soporte interno para empalme mecánico o fusión. Color blanco
-                      estético.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- CONECTORES Y ADAPTADORES -->
-
-              <div class="col-md-4 producto" data-categoria="conectores">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CONECTORES
-                    Y ADAPTADORES</span>
-                  <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4" alt="Conector SC/APC">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Conector SC/APC</h5>
-                    <p class="card-text">Conector pre-pulido para terminación rápida en campo. Ideal para redes FTTH y
-                      empresariales.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="conectores">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CONECTORES
-                    Y ADAPTADORES</span>
-                  <img src="img/productos/CONECTORESYADAPTADORES.png" class="card-img-top p-4"
-                    alt="Adaptador SC/UPC Dúplex">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Adaptador SC/UPC Dúplex</h5>
-                    <p class="card-text">Cuerpo de polímero de alta precisión. Apto para montaje en bandejas, paneles y
-                      ODFs.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- CABLES ÓPTICOS -->
-
-              <div class="col-md-4 producto" data-categoria="cables">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CABLES
-                    ÓPTICOS</span>
-                  <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4" alt="Patchcord SC/APC 3m">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Patchcord SC/APC 3 metros</h5>
-                    <p class="card-text">Fibra monomodo simplex. Ideal para conexiones entre ODF y equipos activos.
-                      Incluye férula cerámica.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 producto" data-categoria="cables">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">CABLES
-                    ÓPTICOS</span>
-                  <img src="img/productos/CABLESOPTICOS.png" class="card-img-top p-4"
-                    alt="Cable óptico preconectorizado 50m">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Cable Óptico Preconectorizado 50m</h5>
-                    <p class="card-text">Solución plug & play para despliegue rápido. Conector SC/APC en ambos extremos.
-                      Diámetro 3mm.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- RADIOS -->
-
-              <div class="col-md-4 producto" data-categoria="radios">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <span class="badge bg-secondary position-absolute top-0 start-0 m-2"
-                    style="color: white;">RADIOS</span>
-                  <img src="img/productos/RADIOS.png" class="card-img-top p-4" alt="Enlace Ubiquiti 5GHz">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Enlace Ubiquiti 5GHz</h5>
-                    <p class="card-text">Solución PTP de alta capacidad. Antena integrada y hasta 450 Mbps reales en
-                      campo.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- UPS -->
-
-              <div class="col-md-4 producto" data-categoria="ups">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <img src="img/productos/UPS.png" class="card-img-top p-4" alt="UPS 1000VA">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">UPS 1000VA Interactiva</h5>
-                    <p class="card-text">Provee energía continua a equipos críticos. Incluye software de monitoreo y
-                      puertos USB.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Router WiFi AC1200"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- RACK -->
-
-              <div class="col-md-4 producto" data-categoria="rack">
-                <div class="card h-100 shadow-sm producto-hover2">
-                  <img src="img/productos/RACK.png" class="card-img-top p-4" alt="Rack 42U piso">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Rack 42U Piso 19”</h5>
-                    <p class="card-text">Estructura metálica robusta, puertas de vidrio templado. Ideal para salas de
-                      servidores.</p>
-                  </div>
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
-                    <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
-                    <div class="d-flex gap-2">
-                      <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm"
-                        title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
-                      <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto"
-                        class="btn btn-outline-primary btn-sm" title="Enviar mail">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
-                      <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="Rack 42U Piso 19"
-                        title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
             </div>
 
             <div id="paginacion-productos" class="text-center mt-4">
@@ -1411,7 +412,7 @@
         });
       });
     </script>
-    
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -1422,15 +423,15 @@
         const productosPorPagina = 6;
         const paginacionContainer = document.querySelector("#paginacion-productos ul");
         const productos = document.querySelectorAll('.producto');
-      
+
         let paginaActual = 1;
         let categoriaActual = "todos";
-      
+
         // Clona las categorías
         if (listaMobile && listaOriginal) {
           listaMobile.innerHTML = listaOriginal.innerHTML;
         }
-      
+
         // Toggle mobile
         if (toggle && listaMobile) {
           toggle.addEventListener('click', () => {
@@ -1440,7 +441,7 @@
             toggle.querySelector('i').classList.toggle('fa-chevron-up', !isVisible);
           });
         }
-      
+
         // Mostrar productos filtrados
         function obtenerProductosFiltrados() {
           const texto = buscador.value.toLowerCase();
@@ -1450,40 +451,40 @@
             return perteneceCategoria && coincideBusqueda;
           });
         }
-      
+
         // Mostrar productos por página
         function mostrarPagina(pagina) {
-  const productos = obtenerProductosFiltrados();
-  const inicio = (pagina - 1) * productosPorPagina;
-  const fin = inicio + productosPorPagina;
+          const productos = obtenerProductosFiltrados();
+          const inicio = (pagina - 1) * productosPorPagina;
+          const fin = inicio + productosPorPagina;
 
-  document.querySelectorAll('.producto').forEach(p => {
-    p.style.display = 'none';
-    p.classList.remove('fade-in'); // importante para reiniciar la animación
-  });
+          document.querySelectorAll('.producto').forEach(p => {
+            p.style.display = 'none';
+            p.classList.remove('fade-in'); // importante para reiniciar la animación
+          });
 
-  productos.slice(inicio, fin).forEach((p, index) => {
-    p.style.display = 'block';
-    setTimeout(() => {
-      p.classList.add('fade-in');
-    }, 50 + index * 50); // animación escalonada
-  });
+          productos.slice(inicio, fin).forEach((p, index) => {
+            p.style.display = 'block';
+            setTimeout(() => {
+              p.classList.add('fade-in');
+            }, 50 + index * 50); // animación escalonada
+          });
 
-  actualizarPaginacion(productos.length, pagina);
-}
+          actualizarPaginacion(productos.length, pagina);
+        }
 
 
-      
+
         // Crear paginación
         function actualizarPaginacion(total, paginaActual) {
           const totalPaginas = Math.ceil(total / productosPorPagina);
           paginacionContainer.innerHTML = '';
-      
+
           if (total === 0) {
             paginacionContainer.innerHTML = '<li class="page-item disabled"><span class="page-link">Sin resultados</span></li>';
             return;
           }
-      
+
           for (let i = 1; i <= totalPaginas; i++) {
             const li = document.createElement('li');
             li.className = 'page-item' + (i === paginaActual ? ' active' : '');
@@ -1500,64 +501,64 @@
             paginacionContainer.appendChild(li);
           }
         }
-      
+
         // Clic en categorías (mobile y desktop)
-      // Filtro por categoría (desktop y mobile)
-document.body.addEventListener('click', (e) => {
-  if (e.target.classList.contains('categoria-btn')) {
-    e.preventDefault();
-    const categoria = e.target.dataset.categoria;
+        // Filtro por categoría (desktop y mobile)
+        document.body.addEventListener('click', (e) => {
+          if (e.target.classList.contains('categoria-btn')) {
+            e.preventDefault();
+            const categoria = e.target.dataset.categoria;
 
-    document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
-    e.target.classList.add('active-categoria');
-    categoriaActual = categoria;
-    paginaActual = 1;
-    mostrarPagina(paginaActual);
+            document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
+            e.target.classList.add('active-categoria');
+            categoriaActual = categoria;
+            paginaActual = 1;
+            mostrarPagina(paginaActual);
 
-    // Oculta menú mobile
-    if (window.innerWidth < 768 && listaMobile) {
-      listaMobile.style.display = 'none';
-    }
+            // Oculta menú mobile
+            if (window.innerWidth < 768 && listaMobile) {
+              listaMobile.style.display = 'none';
+            }
 
-    // ⬇️ ACA pegá este bloque:
-    const filtroMobileTexto = document.getElementById('filtroSeleccionadoMobile');
-    const texto = e.target.textContent.trim();
-    if (filtroMobileTexto && window.innerWidth < 768) {
-      filtroMobileTexto.textContent = `Mostrando: ${texto}`;
-    }
-  }
-});
+            // ⬇️ ACA pegá este bloque:
+            const filtroMobileTexto = document.getElementById('filtroSeleccionadoMobile');
+            const texto = e.target.textContent.trim();
+            if (filtroMobileTexto && window.innerWidth < 768) {
+              filtroMobileTexto.textContent = `Mostrando: ${texto}`;
+            }
+          }
+        });
 
-      
+
         // Búsqueda
         buscador.addEventListener('input', () => {
           paginaActual = 1;
           mostrarPagina(paginaActual);
         });
-      
+
         // Mostrar al cargar
         mostrarPagina(paginaActual);
       });
-      </script>
-      
+    </script>
 
 
-      <!-- Esto es para cargar cards desde hoja de cálculo -->
-      <script>
-        fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
-          .then(response => response.text())
-          .then(data => {
-            const filas = data.split('\n').slice(1); // saltea el encabezado
-            const productos = filas.map(fila => {
-              const [titulo, descripcion, imagen] = fila.split(',');
-              return { titulo, descripcion, imagen };
-            });
-            console.log("Productos cargados desde la hoja de cálculo:");
-            console.log(productos);
-          })
-          .catch(error => console.error("Error al cargar los datos:", error));
-      </script>
-      
+
+    <!-- Esto es para cargar cards desde hoja de cálculo -->
+    <script>
+      fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
+        .then(response => response.text())
+        .then(data => {
+          const filas = data.split('\n').slice(1); // saltea el encabezado
+          const productos = filas.map(fila => {
+            const [titulo, descripcion, imagen] = fila.split(',');
+            return { titulo, descripcion, imagen };
+          });
+          console.log("Productos cargados desde la hoja de cálculo:");
+          console.log(productos);
+        })
+        .catch(error => console.error("Error al cargar los datos:", error));
+    </script>
+
 
 
 
