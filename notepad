@@ -1,4 +1,243 @@
- <div class="row g-4" id="grilla-productos">
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="SemiColonWeb" />
+  <link rel="icon" href="img/iconoSmall.png" type="image/x-icon" />
+
+
+  <!-- Stylesheets
+	============================================= -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Montserrat:400,700|Merriweather&display=swap"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="products.css" type="text/css" />
+  <link rel="stylesheet" href="css/dark.css" type="text/css" />
+  <!-- Media Agency Demo Specific Stylesheet -->
+  <link rel="stylesheet" href="demos/app-landing/app-landing.css" type="text/css" />
+  <!-- / -->
+
+  <!-- Home Demo Specific Stylesheet -->
+  <link rel="stylesheet" href="demos/interior-design/interior-design.css" type="text/css" />
+
+  <!-- Reader's Blog Demo Specific Fonts -->
+  <link rel="stylesheet" href="demos/interior-design/css/fonts.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+  <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="demos/app-landing/css/fonts.css" type="text/css" />
+  <!-- Bootstrap Switch CSS -->
+  <link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+  <link rel="stylesheet" href="css/custom.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css" />
+  <!-- Font Awesome (sin integrity) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer>
+  </script>
+
+  <!-- Document Title
+	============================================= -->
+  <title>Fiberquil | Productos</title>
+</head>
+
+<body class="stretched" style="width: 100%">
+  <!-- Document Wrapper
+	============================================= -->
+  <div id="wrapper" class="clearfix">
+    <!-- Header
+		============================================= -->
+    <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark"
+      data-responsive-class="not-dark">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="header-row justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <div id="logo">
+              <a href="https://fiberquil.com.ar/" class="standard-logo tamañoPic">
+                <img src="img/logoFiber-removebg.png" alt="">
+              </a>
+              <a href="https://fiberquil.com.ar/" class="retina-logo">
+                <img src="img/logoFiber-removebg.png" alt="">
+              </a>
+            </div>
+
+            <!-- Iconos sociales (solo desktop) -->
+            <div class="d-none d-md-flex gap-2 align-items-center">
+              <a href="mailto:info@fiberquil.com.ar" target="_blank" class="btn btn-outline-light btn-sm" title="Mail"
+                style="border-radius: 10px;">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/+541141573771" target="_blank" class="btn btn-outline-success btn-sm"
+                title="WhatsApp" style="border-radius: 10px;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fiberquil-srl/about/" target="_blank"
+                class="btn btn-outline-info btn-sm" title="LinkedIn" style="border-radius: 10px;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/fiberquilsrl?lang=es" target="_blank" class="btn btn-outline-primary btn-sm"
+                title="X (Twitter)" style="border-radius: 10px;">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://web.facebook.com/fiberquilfibraoptica/" target="_blank"
+                class="btn btn-outline-primary btn-sm" title="Facebook" style="border-radius: 10px;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+
+            <!-- Menú Hamburguesa (mobile) -->
+            <div id="primary-menu-trigger">
+              <svg class="svg-trigger" viewBox="0 0 100 100">
+                <path d="m 30,33 h 40 c 3.72,0 7.5,3.13 7.5,8.57 0,5.45 -2.73,8.42 -7.5,8.42 h -20"></path>
+                <path d="m 30,50 h 40"></path>
+                <path d="m 70,67 h -40 c 0,0 -7.5,-0.8 -7.5,-8.36 0,-7.56 7.5,-8.63 7.5,-8.63 h 20"></path>
+              </svg>
+            </div>
+
+            <!-- Primary Navigation -->
+            <nav class="primary-menu not-dark with-arrows">
+              <ul class="menu-container not-dark">
+                <li class="menu-item">
+                  <a class="menu-link" href="index.html">
+                    <div style="font-size: 14px;">Volver al INICIO</div>
+                  </a>
+                </li>
+                <!-- Social Icons in mobile menu -->
+                <li class="menu-item d-md-none">
+                  <a class="menu-link" href="mailto:info@fiberquil.com.ar" title="Mail">
+                    <div><i class="fas fa-envelope"></i> Mail</div>
+                  </a>
+                  <a class="menu-link" href="https://wa.me/+541141573771" title="WhatsApp">
+                    <div><i class="fab fa-whatsapp"></i> WhatsApp</div>
+                  </a>
+                  <a class="menu-link" href="https://www.linkedin.com/company/fiberquil-srl/about/" title="LinkedIn">
+                    <div><i class="fab fa-linkedin-in"></i> LinkedIn</div>
+                  </a>
+                  <a class="menu-link" href="https://twitter.com/fiberquilsrl?lang=es" title="X">
+                    <div><i class="fab fa-x-twitter"></i> Twitter</div>
+                  </a>
+                  <a class="menu-link" href="https://web.facebook.com/fiberquilfibraoptica/" title="Facebook">
+                    <div><i class="fab fa-facebook-f"></i> Facebook</div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap-clone"></div>
+    </header>
+
+
+    <!-- #header end -->
+
+    <!-- Banner inicial -->
+    <div style="position: relative; height: 50vh; width: 100%;">
+      <!-- Video de fondo -->
+      <video autoplay muted loop
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="img/videoMIO.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+
+      <!-- Título sobre el video -->
+      <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 20px 40px;
+      border-radius: 20px;
+      font-size: 2.2em;
+      font-weight: bold;
+      text-align: center;">
+        Nuestros Productos
+      </div>
+    </div>
+
+
+
+
+
+    <br><br>
+
+    <section class="productos-ampliado py-5 px-3 px-md-5 bg-light">
+
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- Filtro móvil solo visible en mobile -->
+          <div class="filtro-categorias-mobile d-md-none mb-3">
+            <button class="btn btn-outline-dark w-100" id="toggleCategoriasMobile">
+              Filtrar por categoría <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="filtroSeleccionadoMobile" class="texto-filtro-mobile mt-2"></div>
+            <div id="filtroSeleccionadoMobile" class="mt-2 text-center text-muted small" style="font-weight: bold;">
+            </div>
+            <div id="listaCategoriasMobile" style="display: none;" class="mt-2">
+              <!-- Acá se copia lo que hay en #lista-categorias -->
+            </div>
+          </div>
+
+
+
+
+          <input type="text" id="buscador-productos" class="form-control mb-4" style="border-radius: 10px;"
+            placeholder="Buscar producto...">
+          <!-- Categorías -->
+          <div class="col-md-3">
+            <div class="list-group" id="lista-categorias">
+              <button class="list-group-item list-group-item-action categoria-btn active-categoria"
+                data-categoria="todos">Todos los productos</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="switch">Switch y
+                Router</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="gpon">GPON</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="video">Video</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="empalme">Cajas de
+                Empalme</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="terminacion">Cajas de
+                Terminación</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="odf">ODFs</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="splitter">Splitters</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="distribucion">Distribución</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="puntos">Puntos de
+                Terminación</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="conectores">Conectores y Adaptadores</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="cables">Cables
+                Ópticos</button>
+              <button class="list-group-item list-group-item-action categoria-btn"
+                data-categoria="radios">Radios</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="ups">UPS</button>
+              <button class="list-group-item list-group-item-action categoria-btn" data-categoria="rack">Rack</button>
+            </div>
+          </div>
+
+
+          <!-- Grilla de productos -->
+          <div class="col-lg-9">
+            <div class="row g-4" id="grilla-productos">
+              <!-- Aquí se van a insertar las cards -->
+            </div>
+
+            <!--Este es el actual a eliminar -->
+            <div class="row g-4" id="grilla-productos">
 
               <!-- SWITCHES Y ROUTERS -->
 
@@ -996,3 +1235,334 @@
 
 
             </div>
+
+            <div id="paginacion-productos" class="text-center mt-4">
+              <nav>
+                <ul class="pagination justify-content-center"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer
+		============================================= -->
+    <footer id="footer" class="dark border-0">
+
+      <div class="container center">
+        <div class="footer-widgets-wrap">
+
+          <div class="row mx-auto clearfix">
+
+            <div class="col-lg-4">
+
+              <div class="widget clearfix">
+                <h4>Links</h4>
+
+                <ul class="list-unstyled footer-site-links mb-0">
+                  <li><a href="#" data-scrollto="#section-somos" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Quienes somos</a></li>
+                  <li><a href="#" data-scrollto="#section-servicios" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Servicios</a></li>
+                  <li><a href="#" data-scrollto="#section-clientes" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Clientes</a></li>
+                  <li><a href="#" data-scrollto="#section-info" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Información</a></li>
+                  <li><a href="#" data-scrollto="#section-map" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Ubicación</a></li>
+                  <li><a href="#" data-scrollto="#section-form" data-easing="easeInOutExpo" data-speed="1250"
+                      data-offset="70">Formulario</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="widget subscribe-widget clearfix" data-loader="button">
+                <h4>FIBERQUIL S.R.L</h4>
+
+                <div class="widget-subscribe-form-result"></div>
+                <!-- #suscribe 
+                <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+                  <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email"
+                    class="form-control form-control-lg not-dark required email" placeholder="Tu dirección de email">
+                  <button class="button button-border button-circle button-light topmargin-sm" type="submit">Suscribite
+                  </button>
+                </form>
+                -->
+                <div class="center topmargin-sm">
+                  <a target="_blank" href="https://web.facebook.com/fiberquilfibraoptica/?locale=es_LA&_rdc=1&_rdr"
+                    class="social-icon inline-block border-0 si-small si-facebook" title="Facebook">
+                    <i class="icon-facebook"></i>
+                    <i class="icon-facebook"></i>
+                  </a>
+                  <a target="_blank" href="https://twitter.com/fiberquilsrl?lang=es"
+                    class="social-icon inline-block border-0 si-small si-twitter" title="Twitter">
+                    <i class="icon-twitter"></i>
+                    <i class="icon-twitter"></i>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/fiberquil/"
+                    class="social-icon inline-block border-0 si-small si-instagram" title="instagram">
+                    <i class="icon-instagram"></i>
+                    <i class="icon-instagram"></i>
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com/company/fiberquil-srl/about/"
+                    class="social-icon inline-block border-0 si-small si-linkedin" title="linkedin">
+                    <i class="icon-linkedin"></i>
+                    <i class="icon-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="widget clearfix">
+                <h4>Contacto</h4>
+
+                <p style="font-size: medium;" class="lead">Av Calchaqui 2371 Quilmes, BS.AS</p>
+                <p style="font-size: medium;" class="lead">Av Maestro Vidal 1027, Córdoba capital</p>
+                <p style="font-size: medium;" class="lead">Calle 160 Bis N°583 La Plata, BS.AS</p>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div id="copyrights">
+        <div class="container center clearfix">
+          Fiberquil SRL | Fibra Óptica y Cableado estructurado
+        </div>
+      </div>
+
+    </footer>
+    <!-- #footer end -->
+    <!-- #wrapper end -->
+    <!-- Go To Top
+	============================================= -->
+    <div class=""></div>
+    <a class="floating-button" href="https://wa.me/+541141573771" target="_blank" rel="noopener noreferrer"></a>
+    <!-- JavaScripts
+	============================================= -->
+
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+    <script>
+      document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const producto = this.getAttribute('data-producto');
+          const mensaje = `Hola, me contacto desde fiberquil.com para consultar sobre el producto: "${producto}"`;
+          const numero = "+541141573771";
+          const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+          window.open(url, '_blank');
+        });
+      });
+    </script>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const buscador = document.getElementById('buscador-productos');
+        const toggle = document.getElementById('toggleCategoriasMobile');
+        const listaMobile = document.getElementById('listaCategoriasMobile');
+        const listaOriginal = document.getElementById('lista-categorias');
+        const productosPorPagina = 6;
+        const paginacionContainer = document.querySelector("#paginacion-productos ul");
+        const productos = document.querySelectorAll('.producto');
+
+        let paginaActual = 1;
+        let categoriaActual = "todos";
+
+        // Clona las categorías
+        if (listaMobile && listaOriginal) {
+          listaMobile.innerHTML = listaOriginal.innerHTML;
+        }
+
+        // Toggle mobile
+        if (toggle && listaMobile) {
+          toggle.addEventListener('click', () => {
+            const isVisible = listaMobile.style.display === 'block';
+            listaMobile.style.display = isVisible ? 'none' : 'block';
+            toggle.querySelector('i').classList.toggle('fa-chevron-down', isVisible);
+            toggle.querySelector('i').classList.toggle('fa-chevron-up', !isVisible);
+          });
+        }
+
+        // Mostrar productos filtrados
+        function obtenerProductosFiltrados() {
+          const texto = buscador.value.toLowerCase();
+          return Array.from(productos).filter(prod => {
+            const perteneceCategoria = categoriaActual === "todos" || prod.dataset.categoria === categoriaActual;
+            const coincideBusqueda = prod.querySelector('.card-title').textContent.toLowerCase().includes(texto);
+            return perteneceCategoria && coincideBusqueda;
+          });
+        }
+
+        // Mostrar productos por página
+        function mostrarPagina(pagina) {
+          const productos = obtenerProductosFiltrados();
+          const inicio = (pagina - 1) * productosPorPagina;
+          const fin = inicio + productosPorPagina;
+
+          document.querySelectorAll('.producto').forEach(p => {
+            p.style.display = 'none';
+            p.classList.remove('fade-in'); // importante para reiniciar la animación
+          });
+
+          productos.slice(inicio, fin).forEach((p, index) => {
+            p.style.display = 'block';
+            setTimeout(() => {
+              p.classList.add('fade-in');
+            }, 50 + index * 50); // animación escalonada
+          });
+
+          actualizarPaginacion(productos.length, pagina);
+        }
+
+
+
+        // Crear paginación
+        function actualizarPaginacion(total, paginaActual) {
+          const totalPaginas = Math.ceil(total / productosPorPagina);
+          paginacionContainer.innerHTML = '';
+
+          if (total === 0) {
+            paginacionContainer.innerHTML = '<li class="page-item disabled"><span class="page-link">Sin resultados</span></li>';
+            return;
+          }
+
+          for (let i = 1; i <= totalPaginas; i++) {
+            const li = document.createElement('li');
+            li.className = 'page-item' + (i === paginaActual ? ' active' : '');
+            const a = document.createElement('a');
+            a.className = 'page-link';
+            a.href = '#';
+            a.textContent = i;
+            a.addEventListener('click', e => {
+              e.preventDefault();
+              paginaActual = i;
+              mostrarPagina(paginaActual);
+            });
+            li.appendChild(a);
+            paginacionContainer.appendChild(li);
+          }
+        }
+
+        // Clic en categorías (mobile y desktop)
+        // Filtro por categoría (desktop y mobile)
+        document.body.addEventListener('click', (e) => {
+          if (e.target.classList.contains('categoria-btn')) {
+            e.preventDefault();
+            const categoria = e.target.dataset.categoria;
+
+            document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
+            e.target.classList.add('active-categoria');
+            categoriaActual = categoria;
+            paginaActual = 1;
+            mostrarPagina(paginaActual);
+
+            // Oculta menú mobile
+            if (window.innerWidth < 768 && listaMobile) {
+              listaMobile.style.display = 'none';
+            }
+
+            // ⬇️ ACA pegá este bloque:
+            const filtroMobileTexto = document.getElementById('filtroSeleccionadoMobile');
+            const texto = e.target.textContent.trim();
+            if (filtroMobileTexto && window.innerWidth < 768) {
+              filtroMobileTexto.textContent = `Mostrando: ${texto}`;
+            }
+          }
+        });
+
+
+        // Búsqueda
+        buscador.addEventListener('input', () => {
+          paginaActual = 1;
+          mostrarPagina(paginaActual);
+        });
+
+        // Mostrar al cargar
+        mostrarPagina(paginaActual);
+      });
+    </script>
+
+
+
+    <!-- Esto es para cargar cards desde hoja de cálculo -->
+    <script>
+      fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
+        .then(response => response.text())
+        .then(data => {
+          const filas = data.split('\n').slice(1); // saltea el encabezado
+          const productos = filas.map(fila => {
+            const [titulo, descripcion, imagen] = fila.split(',');
+            return { titulo, descripcion, imagen };
+          });
+          console.log("Productos cargados desde la hoja de cálculo:");
+          console.log(productos);
+        })
+        .catch(error => console.error("Error al cargar los datos:", error));
+    </script>
+
+
+
+
+
+</body>
+
+</html>
