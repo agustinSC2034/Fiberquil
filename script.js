@@ -15,3 +15,49 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+// cards dinamicas
+function crearCardProducto({ titulo, descripcion, imagen }) {
+  const card = document.createElement('div');
+  card.className = 'col-md-4 producto';
+  card.setAttribute('data-categoria', 'importado'); // Cambiar si usás otra lógica de categoría
+
+  card.innerHTML = `
+    <div class="card h-100 shadow-sm producto-hover2">
+      <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">IMPORTADO</span>
+      <img src="img/productos/${imagen}" class="card-img-top p-4" alt="${titulo}">
+      <div class="card-body text-center">
+        <h5 class="card-title">${titulo}</h5>
+        <p class="card-text">${descripcion}</p>
+      </div>
+      <div class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
+        <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
+        <div class="d-flex gap-2">
+          <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm" title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
+          <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto" class="btn btn-outline-primary btn-sm" title="Enviar mail"><i class="fas fa-envelope"></i></a>
+          <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="${titulo}" title="WhatsApp"><i class="fab fa-whatsapp"></i></button>
+        </div>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
+function cargarProductosDesdeHoja() {
+  fetch('https://opensheet.elk.sh/1VZMWOCcW8H7E3iOCCDu5YtR_Xm6AbBKr_O1mfPbvm7g/Productos')
+    .then(res => res.json())
+    .then(data => {
+      const grilla = document.getElementById('grilla-productos');
+      data.forEach(producto => {
+        const card = crearCardProducto(producto);
+        grilla.appendChild(card);
+      });
+      console.log("Productos cargados desde la hoja de cálculo:", data);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  cargarProductosDesdeHoja();
+});
