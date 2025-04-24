@@ -15,25 +15,3 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// File: products.html
-  document.querySelectorAll('.categoria-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      // Remover clase activa de todos
-      document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active-categoria'));
-
-      // Activar el clickeado
-      this.classList.add('active-categoria');
-
-      const categoria = this.dataset.categoria;
-
-      // Mostrar/ocultar productos
-      document.querySelectorAll('.producto').forEach(prod => {
-        if (categoria === 'todos' || prod.dataset.categoria === categoria) {
-          prod.style.display = 'block';
-        } else {
-          prod.style.display = 'none';
-        }
-      });
-    });
-  });

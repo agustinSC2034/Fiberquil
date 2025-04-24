@@ -143,16 +143,16 @@
     <!-- #header end -->
 
     <!-- Banner inicial -->
-<div style="position: relative; height: 50vh; width: 100%;">
-  <!-- Video de fondo -->
-  <video autoplay muted loop
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-    <source src="img/videoMIO.mp4" type="video/mp4">
-    Tu navegador no soporta el elemento de video.
-  </video>
+    <div style="position: relative; height: 50vh; width: 100%;">
+      <!-- Video de fondo -->
+      <video autoplay muted loop
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="img/videoMIO.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
 
-  <!-- Título sobre el video -->
-  <div style="
+      <!-- Título sobre el video -->
+      <div style="
       position: absolute;
       top: 50%;
       left: 50%;
@@ -164,21 +164,36 @@
       font-size: 2.2em;
       font-weight: bold;
       text-align: center;">
-    Nuestros Productos
+        Nuestros Productos
+      </div>
+    </div>
+
+
+
+
+
+    <br><br>
+
+    <section class="productos-ampliado py-5 px-3 px-md-5 bg-light">
+
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+
+                   <!-- Filtro móvil solo visible en mobile -->
+<div class="filtro-categorias-mobile d-md-none mb-3">
+  <button class="btn btn-outline-dark w-100" id="toggleCategoriasMobile">
+    Filtrar por categoría <i class="fas fa-chevron-down"></i>
+  </button>
+  <div id="filtroSeleccionadoMobile" class="mt-2 text-center text-muted small" style="font-weight: bold;"></div>
+  <div id="listaCategoriasMobile" style="display: none;" class="mt-2">
+    <!-- Acá se copia lo que hay en #lista-categorias -->
   </div>
 </div>
 
 
 
 
-
-<br><br>
-
-    <section class="productos-ampliado py-5 px-3 px-md-5 bg-light">
-      
-      <br>
-      <div class="container-fluid">
-        <div class="row">
           <input type="text" id="buscador-productos" class="form-control mb-4" style="border-radius: 10px;"
             placeholder="Buscar producto...">
           <!-- Categorías -->
@@ -1217,7 +1232,7 @@
               <nav>
                 <ul class="pagination justify-content-center"></ul>
               </nav>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -1370,50 +1385,6 @@
     <a class="floating-button" href="https://wa.me/+541141573771" target="_blank" rel="noopener noreferrer"></a>
     <!-- JavaScripts
 	============================================= -->
-    <script>
-      document.querySelectorAll('.categoria-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-          // Remover clase activa de todos
-          document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active-categoria'));
-
-          // Activar el clickeado
-          this.classList.add('active-categoria');
-
-          const categoria = this.dataset.categoria;
-
-          // Mostrar/ocultar productos
-          document.querySelectorAll('.producto').forEach(prod => {
-            if (categoria === 'todos' || prod.dataset.categoria === categoria) {
-              prod.style.display = 'block';
-            } else {
-              prod.style.display = 'none';
-            }
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.getElementById('buscador-productos').addEventListener('input', function () {
-        const texto = this.value.toLowerCase();
-        document.querySelectorAll('.producto').forEach(prod => {
-          const nombre = prod.querySelector('.card-title').textContent.toLowerCase();
-          prod.style.display = nombre.includes(texto) ? 'block' : 'none';
-        });
-      });
-
-    </script>
-    <script>
-      const modalConsulta = document.getElementById('modalConsulta');
-      modalConsulta.addEventListener('show.bs.modal', function (event) {
-        const button = event.relatedTarget;
-        const producto = button.getAttribute('data-producto');
-        const input = modalConsulta.querySelector('#productoSeleccionado');
-        input.value = producto;
-        modalConsulta.querySelector('#modalConsultaLabel').textContent = `Consulta por: ${producto}`;
-      });
-    </script>
-
 
     </script>
     <script src="js/jquery.js"></script>
@@ -1422,64 +1393,89 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
-    <!-- Bootstrap 5 JS (para modales) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qE+9aLJ7LvTqYlUVtMRbDRX4kINgJBCWUv4gImK0kW/qlnNbdh5T+pHsnDymGDE/"
-      crossorigin="anonymous"></script>
-
-      <script>
-        document.querySelectorAll('.whatsapp-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
-            const producto = this.getAttribute('data-producto');
-            const mensaje = `Hola, me contacto desde fiberquil.com para consultar sobre el producto: "${producto}"`;
-            const numero = "+541141573771";
-            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-            window.open(url, '_blank');
-          });
+    <script>
+      document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const producto = this.getAttribute('data-producto');
+          const mensaje = `Hola, me contacto desde fiberquil.com para consultar sobre el producto: "${producto}"`;
+          const numero = "+541141573771";
+          const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+          window.open(url, '_blank');
         });
-      </script>
-      <script>
-        const productosPorPagina = 6;
-        const grilla = document.getElementById("grilla-productos");
-        const paginacionContainer = document.querySelector("#paginacion-productos ul");
+      });
+    </script>
+    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
         const buscador = document.getElementById('buscador-productos');
+        const toggle = document.getElementById('toggleCategoriasMobile');
+        const listaMobile = document.getElementById('listaCategoriasMobile');
+        const listaOriginal = document.getElementById('lista-categorias');
+        const productosPorPagina = 6;
+        const paginacionContainer = document.querySelector("#paginacion-productos ul");
+        const productos = document.querySelectorAll('.producto');
+      
         let paginaActual = 1;
         let categoriaActual = "todos";
       
-        // Filtrar productos por categoría y/o búsqueda
+        // Clona las categorías
+        if (listaMobile && listaOriginal) {
+          listaMobile.innerHTML = listaOriginal.innerHTML;
+        }
+      
+        // Toggle mobile
+        if (toggle && listaMobile) {
+          toggle.addEventListener('click', () => {
+            const isVisible = listaMobile.style.display === 'block';
+            listaMobile.style.display = isVisible ? 'none' : 'block';
+            toggle.querySelector('i').classList.toggle('fa-chevron-down', isVisible);
+            toggle.querySelector('i').classList.toggle('fa-chevron-up', !isVisible);
+          });
+        }
+      
+        // Mostrar productos filtrados
         function obtenerProductosFiltrados() {
           const texto = buscador.value.toLowerCase();
-          return Array.from(document.querySelectorAll('.producto')).filter(prod => {
+          return Array.from(productos).filter(prod => {
             const perteneceCategoria = categoriaActual === "todos" || prod.dataset.categoria === categoriaActual;
             const coincideBusqueda = prod.querySelector('.card-title').textContent.toLowerCase().includes(texto);
             return perteneceCategoria && coincideBusqueda;
           });
         }
       
+        // Mostrar productos por página
         function mostrarPagina(pagina) {
   const productos = obtenerProductosFiltrados();
   const inicio = (pagina - 1) * productosPorPagina;
   const fin = inicio + productosPorPagina;
 
-  // Ocultar todos los productos
-  document.querySelectorAll('.producto').forEach(prod => {
-    prod.style.display = 'none';
-    prod.classList.remove('fade-in');
+  document.querySelectorAll('.producto').forEach(p => {
+    p.style.display = 'none';
+    p.classList.remove('fade-in'); // importante para reiniciar la animación
   });
 
-  // Mostrar los de la página actual con animación
-  productos.slice(inicio, fin).forEach((prod, index) => {
-    prod.style.display = 'block';
-    setTimeout(() => prod.classList.add('fade-in'), 50 + index * 50); // efecto escalonado
+  productos.slice(inicio, fin).forEach((p, index) => {
+    p.style.display = 'block';
+    setTimeout(() => {
+      p.classList.add('fade-in');
+    }, 50 + index * 50); // animación escalonada
   });
 
   actualizarPaginacion(productos.length, pagina);
 }
 
+
       
+        // Crear paginación
         function actualizarPaginacion(total, paginaActual) {
           const totalPaginas = Math.ceil(total / productosPorPagina);
           paginacionContainer.innerHTML = '';
+      
+          if (total === 0) {
+            paginacionContainer.innerHTML = '<li class="page-item disabled"><span class="page-link">Sin resultados</span></li>';
+            return;
+          }
       
           for (let i = 1; i <= totalPaginas; i++) {
             const li = document.createElement('li');
@@ -1488,7 +1484,7 @@
             a.className = 'page-link';
             a.href = '#';
             a.textContent = i;
-            a.addEventListener('click', function (e) {
+            a.addEventListener('click', e => {
               e.preventDefault();
               paginaActual = i;
               mostrarPagina(paginaActual);
@@ -1496,35 +1492,49 @@
             li.appendChild(a);
             paginacionContainer.appendChild(li);
           }
-      
-          if (total === 0) {
-            paginacionContainer.innerHTML = '<li class="page-item disabled"><span class="page-link">Sin resultados</span></li>';
-          }
         }
       
-        // Eventos para filtros
-        document.querySelectorAll('.categoria-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
-            document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active-categoria'));
-            this.classList.add('active-categoria');
-            categoriaActual = this.dataset.categoria;
-            paginaActual = 1;
-            mostrarPagina(paginaActual);
-          });
-        });
+        // Clic en categorías (mobile y desktop)
+      // Filtro por categoría (desktop y mobile)
+document.body.addEventListener('click', (e) => {
+  if (e.target.classList.contains('categoria-btn')) {
+    e.preventDefault();
+    const categoria = e.target.dataset.categoria;
+
+    document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
+    e.target.classList.add('active-categoria');
+    categoriaActual = categoria;
+    paginaActual = 1;
+    mostrarPagina(paginaActual);
+
+    // Oculta menú mobile
+    if (window.innerWidth < 768 && listaMobile) {
+      listaMobile.style.display = 'none';
+    }
+
+    // ⬇️ ACA pegá este bloque:
+    const filtroMobileTexto = document.getElementById('filtroSeleccionadoMobile');
+    const texto = e.target.textContent.trim();
+    if (filtroMobileTexto && window.innerWidth < 768) {
+      filtroMobileTexto.textContent = `Mostrando: ${texto}`;
+    }
+  }
+});
+
       
-        // Evento para búsqueda
+        // Búsqueda
         buscador.addEventListener('input', () => {
           paginaActual = 1;
           mostrarPagina(paginaActual);
         });
       
-        // Iniciar
-        document.addEventListener('DOMContentLoaded', () => {
-          mostrarPagina(paginaActual);
-        });
+        // Mostrar al cargar
+        mostrarPagina(paginaActual);
+      });
       </script>
       
+
+
 </body>
 
 </html>

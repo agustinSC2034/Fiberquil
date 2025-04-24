@@ -1,5 +1,23 @@
 /*Codigo nuevo*/
-
+  /* Oculta el panel lateral de categorías en móviles */
+  @media (max-width: 767px) {
+	.col-md-3 {
+	  display: none !important;
+	}
+  
+	.filtro-categorias-mobile {
+	  margin-bottom: 1rem;
+	}
+  
+	#listaCategoriasMobile button {
+	  margin-bottom: 4px;
+	}
+  
+	#toggleCategoriasMobile {
+	  font-weight: bold;
+	  border-radius: 8px;
+	}
+  }
 
 @media (max-width: 767px) {
 	#logo {
