@@ -76,6 +76,7 @@
   
   .frase-fiberquil {
 	animation: aparecerDesdeAbajo 1.5s ease-out both;
+	padding-inline: 10%;
   }
 
   .sol-fiberquil {
