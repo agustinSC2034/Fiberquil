@@ -1536,6 +1536,26 @@ document.body.addEventListener('click', (e) => {
       
 
 
+      <!-- Esto es para cargar cards desde hoja de cálculo -->
+      <script>
+        fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
+          .then(response => response.text())
+          .then(data => {
+            const filas = data.split('\n').slice(1); // saltea el encabezado
+            const productos = filas.map(fila => {
+              const [titulo, descripcion, imagen] = fila.split(',');
+              return { titulo, descripcion, imagen };
+            });
+            console.log("Productos cargados desde la hoja de cálculo:");
+            console.log(productos);
+          })
+          .catch(error => console.error("Error al cargar los datos:", error));
+      </script>
+      
+
+
+
+
 </body>
 
 </html>
