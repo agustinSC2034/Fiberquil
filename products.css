@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+	#logo {
+	  display: none !important;
+	}
+  }
+
 .card.producto-hover2 {
     transition: all 0.3s ease-in-out;
     border-top-left-radius: 30px;
