@@ -18,16 +18,16 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-// cards dinamicas
-function crearCardProducto({ titulo, descripcion, imagen, categoria }) {
+// Crea una card de producto
+function crearCardProducto({ titulo, descripcion, imagen_url, categoria }) {
   const card = document.createElement('div');
-  card.className = 'col-md-4 producto';
+  card.className = 'col-md-4 producto fade-in';
   card.setAttribute('data-categoria', categoria.toLowerCase());
 
   card.innerHTML = `
     <div class="card h-100 shadow-sm producto-hover2">
-      <span class="badge bg-secondary position-absolute top-0 start-0 m-2" style="color: white;">${categoria}</span>
-      <img src="${imagen}" class="card-img-top p-4" alt="${titulo}">
+      <span class="badge bg-secondary position-absolute top-0 start-0 m-2">${categoria}</span>
+      <img src="${imagen_url}" class="card-img-top p-4" alt="${titulo}">
       <div class="card-body text-center">
         <h5 class="card-title">${titulo}</h5>
         <p class="card-text">${descripcion}</p>
@@ -45,30 +45,31 @@ function crearCardProducto({ titulo, descripcion, imagen, categoria }) {
   return card;
 }
 
-
+// Lee la hoja de cálculo como CSV y crea las cards
 function cargarProductosDesdeHoja() {
-  fetch('https://opensheet.elk.sh/1VZMWOCcW8H7E3iOCCDu5YtR_Xm6AbBKr_O1mfPbvm7g/Hoja%201')
-    .then(res => res.json())
-    .then(data => {
-      console.log("Productos cargados desde la hoja de cálculo:", data);
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
+    .then(response => response.text())
+    .then(csv => {
+      const filas = csv.trim().split('\n').slice(1); // Salta el encabezado
+      const productos = filas.map(fila => {
+        const [titulo, descripcion, imagen_url, categoria] = fila.split(',');
+        return { titulo, descripcion, imagen_url, categoria };
+      });
+
+      console.log("📦 Productos cargados desde la hoja de cálculo:", productos);
 
       const grilla = document.getElementById('grilla-productos');
-      data.forEach(producto => {
-        const card = crearCardProducto({
-          titulo: producto.titulo,
-          descripcion: producto.descripcion,
-          imagen: producto.imagen_url,
-          categoria: producto.categoria
-        });
+      productos.forEach(producto => {
+        const card = crearCardProducto(producto);
         grilla.appendChild(card);
       });
     })
     .catch(error => {
-      console.error("Error al cargar los productos:", error);
+      console.error("❌ Error al cargar los productos:", error);
     });
 }
 
-
+// Ejecutar al cargar
 document.addEventListener('DOMContentLoaded', () => {
   cargarProductosDesdeHoja();
 });
