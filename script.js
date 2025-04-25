@@ -26,7 +26,7 @@ function crearCardProducto({ titulo, descripcion, imagen_url, categoria }) {
 
   card.innerHTML = `
     <div class="card h-100 shadow-sm producto-hover2">
-      <span class="badge bg-secondary position-absolute top-0 start-0 m-2">${categoria}</span>
+      <span class="badge bg-secondary text-white position-absolute top-0 start-0 m-2">${categoria}</span>
       <img src="${imagen_url}" class="card-img-top p-4" alt="${titulo}">
       <div class="card-body text-center">
         <h5 class="card-title">${titulo}</h5>
@@ -45,19 +45,12 @@ function crearCardProducto({ titulo, descripcion, imagen_url, categoria }) {
   return card;
 }
 
-// Lee la hoja de cálculo como CSV y crea las cards
+// Lee la hoja como JSON y crea las cards
 function cargarProductosDesdeHoja() {
-  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQyuAWxbl2yIUaMFIWE1PIJxUslJ7ZOYey5ohumQ3njSszVPl9Tqeo0ULYtQNMDXVhTJ568Pg7igN7R/pub?output=csv')
-    .then(response => response.text())
-    .then(csv => {
-      const filas = csv.trim().split('\n').slice(1); // Salta el encabezado
-      const productos = filas.map(fila => {
-        const [titulo, descripcion, imagen_url, categoria] = fila.split(',');
-        return { titulo, descripcion, imagen_url, categoria };
-      });
-
+  fetch('https://opensheet.elk.sh/1Z_Zh8S5AtG5F2JgMspvt4oNeQ2-6-82lRCjmNZ9wEh4/Hoja%201')
+    .then(response => response.json())
+    .then(productos => {
       console.log("📦 Productos cargados desde la hoja de cálculo:", productos);
-
       const grilla = document.getElementById('grilla-productos');
       productos.forEach(producto => {
         const card = crearCardProducto(producto);
@@ -67,9 +60,106 @@ function cargarProductosDesdeHoja() {
     .catch(error => {
       console.error("❌ Error al cargar los productos:", error);
     });
+    aplicarLogicaDeFiltros();
 }
 
 // Ejecutar al cargar
 document.addEventListener('DOMContentLoaded', () => {
   cargarProductosDesdeHoja();
 });
+
+function aplicarLogicaDeFiltros() {
+  const buscador = document.getElementById('buscador-productos');
+  const botonesCategoria = document.querySelectorAll('.categoria-btn');
+  const listaMobile = document.getElementById('listaCategoriasMobile');
+  const filtroMobileTexto = document.getElementById('filtroSeleccionadoMobile');
+  const productosPorPagina = 6;
+  const paginacionContainer = document.querySelector("#paginacion-productos ul");
+
+  let categoriaActual = "todos";
+  let paginaActual = 1;
+
+  // Filtro por categoría
+  document.body.addEventListener('click', (e) => {
+    if (e.target.classList.contains('categoria-btn')) {
+      e.preventDefault();
+      categoriaActual = e.target.dataset.categoria;
+      paginaActual = 1;
+
+      document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
+      e.target.classList.add('active-categoria');
+
+      if (window.innerWidth < 768 && listaMobile) {
+        listaMobile.style.display = 'none';
+      }
+
+      if (filtroMobileTexto) {
+        filtroMobileTexto.textContent = `Mostrando: ${e.target.textContent.trim()}`;
+      }
+
+      mostrarPaginaFiltrada();
+    }
+  });
+
+  // Filtro por búsqueda
+  buscador.addEventListener('input', () => {
+    paginaActual = 1;
+    mostrarPaginaFiltrada();
+  });
+
+  function obtenerProductosFiltrados() {
+    const texto = buscador.value.toLowerCase();
+    return Array.from(document.querySelectorAll('.producto')).filter(prod => {
+      const perteneceCategoria = categoriaActual === "todos" || prod.dataset.categoria === categoriaActual;
+      const coincideBusqueda = prod.querySelector('.card-title').textContent.toLowerCase().includes(texto);
+      return perteneceCategoria && coincideBusqueda;
+    });
+  }
+
+  function mostrarPaginaFiltrada() {
+    const productos = obtenerProductosFiltrados();
+    const inicio = (paginaActual - 1) * productosPorPagina;
+    const fin = inicio + productosPorPagina;
+
+    document.querySelectorAll('.producto').forEach(p => {
+      p.style.display = 'none';
+      p.classList.remove('fade-in');
+    });
+
+    productos.slice(inicio, fin).forEach((p, index) => {
+      p.style.display = 'block';
+      setTimeout(() => p.classList.add('fade-in'), 50 + index * 50);
+    });
+
+    actualizarPaginacion(productos.length);
+  }
+
+  function actualizarPaginacion(total) {
+    const totalPaginas = Math.ceil(total / productosPorPagina);
+    paginacionContainer.innerHTML = '';
+
+    if (total === 0) {
+      paginacionContainer.innerHTML = '<li class="page-item disabled"><span class="page-link">Sin resultados</span></li>';
+      return;
+    }
+
+    for (let i = 1; i <= totalPaginas; i++) {
+      const li = document.createElement('li');
+      li.className = 'page-item' + (i === paginaActual ? ' active' : '');
+      const a = document.createElement('a');
+      a.className = 'page-link';
+      a.href = '#';
+      a.textContent = i;
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        paginaActual = i;
+        mostrarPaginaFiltrada();
+      });
+      li.appendChild(a);
+      paginacionContainer.appendChild(li);
+    }
+  }
+
+  mostrarPaginaFiltrada();
+}
+
