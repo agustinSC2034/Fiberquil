@@ -56,12 +56,13 @@ function cargarProductosDesdeHoja() {
         const card = crearCardProducto(producto);
         grilla.appendChild(card);
       });
+      aplicarLogicaDeFiltros();
     })
     .catch(error => {
       console.error("❌ Error al cargar los productos:", error);
     });
-    aplicarLogicaDeFiltros();
 }
+
 
 // Ejecutar al cargar
 document.addEventListener('DOMContentLoaded', () => {
