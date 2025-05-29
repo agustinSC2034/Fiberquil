@@ -35,7 +35,6 @@ function crearCardProducto({ titulo, descripcion, imagen_url, categoria }) {
       <div class="card-footer d-flex justify-content-between align-items-center px-3 py-2 bg-light border-top">
         <span class="text-muted" style="font-size: 14px;">Cotizar ahora</span>
         <div class="d-flex gap-2">
-          <a href="docs/producto.pdf" target="_blank" class="btn btn-outline-danger btn-sm" title="Ficha técnica"><i class="fas fa-file-pdf"></i></a>
           <a href="mailto:info@fiberquil.com.ar?subject=Consulta%20de%20producto" class="btn btn-outline-primary btn-sm" title="Enviar mail"><i class="fas fa-envelope"></i></a>
           <button class="btn btn-outline-success btn-sm whatsapp-btn" data-producto="${titulo}" title="WhatsApp"><i class="fab fa-whatsapp"></i></button>
         </div>
