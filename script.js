@@ -76,8 +76,33 @@ function aplicarLogicaDeFiltros() {
   const productosPorPagina = 6;
   const paginacionContainer = document.querySelector("#paginacion-productos ul");
 
-  let categoriaActual = "todos";
+  // Leer parámetro de categoría de la URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoriaURL = urlParams.get('categoria');
+  
+  let categoriaActual = categoriaURL || "todos";
   let paginaActual = 1;
+
+  // Si hay categoría en la URL, activar el botón correspondiente
+  if (categoriaURL) {
+    const botonCategoria = document.querySelector(`[data-categoria="${categoriaURL}"]`);
+    if (botonCategoria) {
+      document.querySelectorAll('.categoria-btn').forEach(btn => btn.classList.remove('active-categoria'));
+      botonCategoria.classList.add('active-categoria');
+      
+      if (filtroMobileTexto) {
+        filtroMobileTexto.textContent = `Mostrando: ${botonCategoria.textContent.trim()}`;
+      }
+      
+      // Hacer scroll a la sección de productos
+      setTimeout(() => {
+        const seccionProductos = document.getElementById('productos-seccion');
+        if (seccionProductos) {
+          seccionProductos.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    }
+  }
 
   // Filtro por categoría
   document.body.addEventListener('click', (e) => {
