@@ -487,13 +487,14 @@
     
     .otros-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
     
     @media (max-width: 992px) {
       .otros-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
       }
     }
     
@@ -572,8 +573,10 @@
     </div>
   </section>
 
-  <!-- Proyecto 1: Ramal Tigre Mitre -->
-  <section class="proyecto-destacado" id="proyecto-ramal-tigre">
+  <!-- ========== SECCIONES DE PROYECTOS COMENTADAS - MOVIDAS A SUBPÁGINAS ==========
+  
+  Proyecto 1: Ramal Tigre Mitre -->
+  <!-- <section class="proyecto-destacado" id="proyecto-ramal-tigre">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -632,10 +635,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Proyecto 2: Parque de las Naciones -->
-  <section class="proyecto-destacado" id="proyecto-parque-naciones">
+  <!-- <section class="proyecto-destacado" id="proyecto-parque-naciones">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
@@ -694,10 +697,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Proyecto 3: AUSA Dellepiane -->
-  <section class="proyecto-destacado" id="proyecto-ausa">
+  <!-- <section class="proyecto-destacado" id="proyecto-ausa">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -756,10 +759,60 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <!-- ========== FIN SECCIONES COMENTADAS ========== -->
+
+  <!-- Proyectos Principales -->
+  <section class="otros-proyectos">
+    <div class="container">
+      <h2 class="otros-proyectos-titulo">Nuestros Proyectos</h2>
+      <div class="otros-grid">
+        
+        <!-- Proyecto 1: Ramal Tigre Mitre -->
+        <div class="otro-proyecto-card" onclick="window.location.href='proyecto-ramal-tigre.html'">
+          <img src="proyectos/ramal_tigre_mitre/IMG-20250929-WA0030.jpg" alt="Ramal Tigre Mitre">
+          <div class="otro-proyecto-info">
+            <h5>Ramal Tigre Mitre</h5>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">Infraestructura Ferroviaria</p>
+          </div>
+        </div>
+        
+        <!-- Proyecto 2: Parque de las Naciones -->
+        <div class="otro-proyecto-card" onclick="window.location.href='proyecto-parque-naciones.html'">
+          <img src="proyectos/parque_de_las_naciones/IMG-20250930-WA0025.jpg" alt="Parque de las Naciones">
+          <div class="otro-proyecto-info">
+            <h5>Parque de las Naciones</h5>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">Infraestructura Urbana</p>
+          </div>
+        </div>
+        
+        <!-- Proyecto 3: AUSA Dellepiane -->
+        <div class="otro-proyecto-card" onclick="window.location.href='proyecto-ausa-dellepiane.html'">
+          <img src="proyectos/ausa_dellepiane/IMG-20250930-WA0050.jpg" alt="AUSA Dellepiane">
+          <div class="otro-proyecto-info">
+            <h5>AUSA Dellepiane</h5>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">Infraestructura Vial</p>
+          </div>
+        </div>
+        
+        <!-- Proyecto 4: Municipalidad de Hurlingham -->
+        <div class="otro-proyecto-card" onclick="window.location.href='proyecto-hurlingham.html'">
+          <img src="proyectos/Municipalidad hurlingham/IMG-20251006-WA0034.jpg" alt="Municipalidad de Hurlingham">
+          <div class="otro-proyecto-info">
+            <h5>Municipalidad de Hurlingham</h5>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">Centro de Monitoreo</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </section>
 
-  <!-- Otros Proyectos -->
-  <section class="otros-proyectos">
+  <!-- ========== SECCIÓN OTROS PROYECTOS COMENTADA ==========
+  
+  Otros Proyectos -->
+  <!-- <section class="otros-proyectos">
     <div class="container">
       <h2 class="otros-proyectos-titulo">Otros Proyectos Realizados</h2>
       <div class="otros-grid">
@@ -808,7 +861,9 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <!-- ========== FIN SECCIÓN OTROS PROYECTOS COMENTADA ========== -->
 
   <!-- Lightbox -->
   <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
